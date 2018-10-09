@@ -1,0 +1,203 @@
+body {
+  position: relative;
+  background: #efefee;
+  min-height:45rem;
+  padding-bottom: 80px;
+}
+
+html {height:100%}
+
+
+img.logo-icon{
+height: 250px;
+margin-left: 40px;
+}
+span.navi span{
+color: #faf5fa;
+border-style: outset;
+border-color: #f2f2f2;
+height: 30px;
+padding-left: 10px;
+padding-top: 3px;
+background-color: #d1d1c5;
+letter-spacing: 3px;
+width:78px;
+font-weight: bold;
+}
+ul.nav div a {
+    margin-left: 1200px;
+}
+
+span.nav div {
+    margin-left: 1200px;
+}
+
+span.navi span {
+    margin-left: 40px;
+}
+
+header.header div {
+    margin-top: 18px;
+    margin-left: 1250px;
+}
+
+
+h1.login {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    height: 70px;
+    margin-top: 50px;
+    font-weight: bold;
+    font-variant: normal;
+    text-transform: uppercase;
+    margin-left: 650px;
+    letter-spacing: 10px;
+    text-decoration: overline;
+}
+
+#username {
+    height: 40px;
+    width: 350px;
+    margin-left: 20px;
+    padding-left: 2px;
+}
+
+#password {
+    width: 350px;
+    height: 40px;
+    margin-left: 26px;
+    margin-top: 20px;
+}
+
+div.name label {
+    margin-left: 430px;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+}
+
+div.pass label {
+    margin-left: 430px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+div.re label {
+    text-transform: uppercase;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+#remember_me {
+    margin-left: 500px;
+    margin-top: 30px;
+}
+#_submit {
+    height: 50px;
+    margin-top: 40px;
+    width: 200px;
+}
+div.ty {
+    font-weight: bold;
+    letter-spacing: 7px;
+    margin-top: 30px;
+    margin-left: 450px;
+    margin-bottom: 40px;
+
+}
+
+div.re {
+    font-weight: bold;
+    margin-left: 70px;
+}
+
+div.re label {
+    font-weight: bold;
+    margin-right: 30px;
+}
+ul.nav div a {
+    margin-left: 1200px;
+}
+
+span.nav div {
+    margin-left: 1200px;
+}
+
+span.navi span {
+    margin-left: 40px;
+}
+
+header.header div {
+    margin-top: 18px;
+    margin-left: 1250px;
+}
+div.col-xs-12 h1 {
+    text-decoration: overline;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+    padding-top: 30px;
+    margin-left: 700px;
+}
+label.required {
+    margin-left: 600px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#fos_user_registration_form_email {
+    height: 35px;
+    margin-left: 15px;
+    width: 253px;
+    margin-bottom: 15px;
+}
+
+#fos_user_registration_form_username {
+    margin-left: 13px;
+    margin-bottom: 15px;
+    height: 35px;
+    width: 213px;
+}
+
+#fos_user_registration_form_plainPassword_first {
+    height: 30px;
+    width: 163px;
+    margin-bottom: 15px;
+    padding-left: 02px;
+    margin-left: 65px;
+}
+
+#fos_user_registration_form_plainPassword_second {
+    height: 30px;
+}
+
+input.btn.btn-primary {
+    height: 40px;
+    width: 250px;
+    margin-top: 50px;
+    margin-left: 650px;
+}
+div.col-xs-12 p {
+    font-size: 50px;
+    font-weight: bold;
+    font-variant: normal;
+    text-decoration: line-through;
+    margin-left: 50px;
+    padding-bottom: 30px;
+}
+
+div.col-xs-12 span a {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 50px;
+    border-style: outset;
+    border-bottom-width: 11px;
+    padding-bottom: 20px;
+    padding-top: 3px;
+    border-color: #cfcbbc;
+    border-right-width: 25px;
+    border-left-width: 10px;
+    border-top-width: 16px;
+    margin-left: 60px;
+}
