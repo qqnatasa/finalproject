@@ -41,16 +41,16 @@ class __TwigTemplate_005d2481c1496ccd0701681165d8eb5d42cc7b1e534c79f82da1e7d5ddf
         ";
         // line 6
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 9
+        // line 11
         echo "    </head>
     <body>
         ";
-        // line 11
+        // line 13
         $this->displayBlock('body', $context, $blocks);
-        // line 12
+        // line 14
         echo "        ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 13
+        // line 15
         echo "    </body>
 </html>
 ";
@@ -91,6 +91,8 @@ class __TwigTemplate_005d2481c1496ccd0701681165d8eb5d42cc7b1e534c79f82da1e7d5ddf
 
         // line 7
         echo "        <link rel=\"stylesheet\" href=\"/css/style.css\">
+        <link rel=\"stylesheet\" href=\"<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\" crossorigin=\"anonymous\">
+<script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js\" integrity=\"sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy\" crossorigin=\"anonymous\"></script>
         ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -100,7 +102,7 @@ class __TwigTemplate_005d2481c1496ccd0701681165d8eb5d42cc7b1e534c79f82da1e7d5ddf
 
     }
 
-    // line 11
+    // line 13
     public function block_body($context, array $blocks = array())
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -117,7 +119,7 @@ class __TwigTemplate_005d2481c1496ccd0701681165d8eb5d42cc7b1e534c79f82da1e7d5ddf
 
     }
 
-    // line 12
+    // line 14
     public function block_javascripts($context, array $blocks = array())
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -141,7 +143,7 @@ class __TwigTemplate_005d2481c1496ccd0701681165d8eb5d42cc7b1e534c79f82da1e7d5ddf
 
     public function getDebugInfo()
     {
-        return array (  121 => 12,  104 => 11,  93 => 7,  84 => 6,  66 => 5,  54 => 13,  51 => 12,  49 => 11,  45 => 9,  43 => 6,  39 => 5,  33 => 1,);
+        return array (  123 => 14,  106 => 13,  93 => 7,  84 => 6,  66 => 5,  54 => 15,  51 => 14,  49 => 13,  45 => 11,  43 => 6,  39 => 5,  33 => 1,);
     }
 
     public function getSourceContext()
@@ -153,6 +155,8 @@ class __TwigTemplate_005d2481c1496ccd0701681165d8eb5d42cc7b1e534c79f82da1e7d5ddf
         <title>{% block title %}SSAMMETA{% endblock %}</title>
         {% block stylesheets %}
         <link rel=\"stylesheet\" href=\"/css/style.css\">
+        <link rel=\"stylesheet\" href=\"<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\" crossorigin=\"anonymous\">
+<script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js\" integrity=\"sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy\" crossorigin=\"anonymous\"></script>
         {% endblock %}
     </head>
     <body>

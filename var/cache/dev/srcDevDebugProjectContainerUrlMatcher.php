@@ -84,6 +84,7 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                     '/' => array(array('_route' => 'user', 'template' => 'user.html.twig', '_controller' => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\TemplateController::templateAction'), null, null, null),
                     '/teacher' => array(array('_route' => 'teacher', 'template' => 'teacher.html.twig', '_controller' => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\TemplateController::templateAction'), null, null, null),
                     '/student' => array(array('_route' => 'student', 'template' => 'student.html.twig', '_controller' => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\TemplateController::templateAction'), null, null, null),
+                    '/mail' => array(array('_route' => 'app_mail', '_controller' => 'App\\Controller\\mailcontroller::mail'), null, null, null),
                 );
 
                 if (!isset($routes[$pathinfo])) {

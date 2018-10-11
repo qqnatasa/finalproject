@@ -49,6 +49,7 @@ class srcDevDebugProjectContainerUrlGenerator extends Symfony\Component\Routing\
         'user' => array(array(), array('template' => 'user.html.twig', '_controller' => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\TemplateController::templateAction'), array(), array(array('text', '/')), array(), array()),
         'teacher' => array(array(), array('template' => 'teacher.html.twig', '_controller' => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\TemplateController::templateAction'), array(), array(array('text', '/teacher')), array(), array()),
         'student' => array(array(), array('template' => 'student.html.twig', '_controller' => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\TemplateController::templateAction'), array(), array(array('text', '/student')), array(), array()),
+        'app_mail' => array(array(), array('_controller' => 'App\\Controller\\mailcontroller::mail'), array(), array(array('text', '/mail')), array(), array()),
     );
         }
     }

@@ -249,6 +249,7 @@
     <parameter key="twig.exception_listener.controller">twig.controller.exception::showAction</parameter>
     <parameter key="twig.form.resources" type="collection">
       <parameter>form_div_layout.html.twig</parameter>
+      <parameter>bootstrap_3_horizontal_layout.html.twig</parameter>
     </parameter>
     <parameter key="twig.default_path">C:\Bitnami\wampstack-7.1.22-0\frameworks\project/templates</parameter>
     <parameter key="security.authentication.trust_resolver.anonymous_class">Symfony\Component\Security\Core\Authentication\Token\AnonymousToken</parameter>
@@ -396,6 +397,9 @@
   </parameters>
   <services>
     <service id="service_container" class="Symfony\Component\DependencyInjection\ContainerInterface" public="true" synthetic="true"/>
+    <service id="App\Controller\mailcontroller" class="App\Controller\mailcontroller" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+    </service>
     <service id="controller_name_converter" class="Symfony\Bundle\FrameworkBundle\Controller\ControllerNameParser" public="false">
       <tag name="monolog.logger" channel="request"/>
       <argument type="service" id="kernel"/>
@@ -3181,10 +3185,11 @@
         <argument key="default_path">C:\Bitnami\wampstack-7.1.22-0\frameworks\project/templates</argument>
         <argument key="debug">true</argument>
         <argument key="strict_variables">true</argument>
-        <argument key="exception_controller">twig.controller.exception::showAction</argument>
         <argument key="form_themes" type="collection">
           <argument>form_div_layout.html.twig</argument>
+          <argument>bootstrap_3_horizontal_layout.html.twig</argument>
         </argument>
+        <argument key="exception_controller">twig.controller.exception::showAction</argument>
         <argument key="autoescape">name</argument>
         <argument key="cache">C:\Bitnami\wampstack-7.1.22-0\frameworks\project\var\cache\dev/twig</argument>
         <argument key="charset">UTF-8</argument>
@@ -4554,6 +4559,8 @@
       <argument>^/((index|app(_[\w]+)?)\.php/)?_wdt</argument>
       <argument type="service" id="web_profiler.csp.handler"/>
     </service>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\Controller.0.App\Controller\mailcontroller" class="App\Controller\mailcontroller" public="false" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\mailcontroller" class="App\Controller\mailcontroller" public="false" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".service_locator.9_yeNH1" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection"/>

@@ -10,21 +10,12 @@
     <body>
       <header class="header">
       <div>
+        <span> Welcome! {{app.user.username}} </span>
         <span class="navi">
-          {% if is_granted('ROLE_USER') %}
            <span><a href="{{ path('fos_user_security_logout') }}">Logout</a></span>
-          {% else %}
-          <span><a href="{{ path('fos_user_security_login') }}">Log in</a></span>
-          {% endif %}
-        </span>
-        <span class="navi">
-          {% if is_granted('ROLE_USER') %}
-          {% else %}
-          <span><a href="{{ path('fos_user_registration_register') }}">Join</a></span>
-          {% endif %}
         </span>
         </div>
-        <img class="logo-icon" src="{{asset('img/student.png')}}">
+        <img class="logo-icon" src="{{asset('img/teacher.png')}}">
      </header>
 
     <div class="main-content">
