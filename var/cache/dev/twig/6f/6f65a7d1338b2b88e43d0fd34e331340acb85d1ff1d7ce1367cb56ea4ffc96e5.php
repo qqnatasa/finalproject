@@ -28,7 +28,7 @@ class __TwigTemplate_a7c1a9f4ed43e1ccc63f6f4c1f917d1754903d637744f9de24dd72264df
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "student.html.twig"));
 
         // line 1
-        echo "<!DOCTYPE html>
+        echo "s<!DOCTYPE html>
 <html>
     <head>
         <meta charset=\"UTF-8\">
@@ -36,64 +36,107 @@ class __TwigTemplate_a7c1a9f4ed43e1ccc63f6f4c1f917d1754903d637744f9de24dd72264df
         // line 5
         $this->displayBlock('title', $context, $blocks);
         echo "</title>
+
+        <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">
+        <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>
+        <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>
         ";
-        // line 6
+        // line 10
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 9
+        // line 13
         echo "    </head>
     <body>
       <header class=\"header\">
       <div>
+        <span> Welcome! ";
+        // line 17
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 17, $this->source); })()), "user", array()), "username", array()), "html", null, true);
+        echo " </span>
         <span class=\"navi\">
-          ";
-        // line 14
-        if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_USER")) {
-            // line 15
-            echo "           <span><a href=\"";
-            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("fos_user_security_logout");
-            echo "\">Logout</a></span>
-          ";
-        } else {
-            // line 17
-            echo "          <span><a href=\"";
-            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("fos_user_security_login");
-            echo "\">Log in</a></span>
-          ";
-        }
+           <span><a href=\"";
         // line 19
-        echo "        </span>
-        <span class=\"navi\">
-          ";
-        // line 21
-        if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_USER")) {
-            // line 22
-            echo "          ";
-        } else {
-            // line 23
-            echo "          <span><a href=\"";
-            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("fos_user_registration_register");
-            echo "\">Join</a></span>
-          ";
-        }
-        // line 25
-        echo "        </span>
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("fos_user_security_logout");
+        echo "\">Logout</a></span>
+        </span>
         </div>
         <img class=\"logo-icon\" src=\"";
-        // line 27
+        // line 22
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/student.png"), "html", null, true);
         echo "\">
      </header>
+     <h2> Math exam in SSAMMETTA </h2>
+     <ul class=\"nav nav-tabs\">
+       <li class=\"active\"><a data-toggle=\"tab\" href=\"#home\">Home</a></li>
+       <li><a data-toggle=\"tab\" href=\"#menu1\">Profile</a></li>
+       <li><a data-toggle=\"tab\" href=\"#menu2\">Menu 2</a></li>
+       <li><a data-toggle=\"tab\" href=\"#menu3\">Menu 3</a></li>
+     </ul>
 
+     <div class=\"tab-content\">
+       <div id=\"home\" class=\"tab-pane fade in active\">
+         <h3>HOME</h3>
+         <center><button type=\"button\" class=\"btn btn-primary\" data-toggle=\"tab\" href=\"#select\">Start exam</button></center>
+
+          <div class=\"col-sm-4\"></div>
+          <div class=\"col-sm-4\"><br>
+          <div id=\"select\" class=\"tab-pane fade\">
+              <select class=\"form-control\" id=\"\">
+                <option disable=\"disable\">select category</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+        </div>
+        </div>
+       <div class=\"col-sm-4\"></div>
+      </div>
+     <div id=\"menu1\" class=\"tab-pane fade\">
+         <h3>Showing Profile</h3>
+         <table
+         <class=\"table\">
+        <thead>
+        <tr>
+        <th>name</th>
+        <th>email</th>
+        <th>type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td><p>";
+        // line 64
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 64, $this->source); })()), "user", array()), "username", array()), "html", null, true);
+        echo "</p></td>
+        <td><p>";
+        // line 65
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 65, $this->source); })()), "user", array()), "email", array()), "html", null, true);
+        echo "</p></td>
+        <td><p>student</p></td>
+        <tr>
+        </tbody>
+        </table>
+
+       </div>
+       <div id=\"menu2\" class=\"tab-pane fade\">
+         <h3>Menu 2</h3>
+         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+       </div>
+       <div id=\"menu3\" class=\"tab-pane fade\">
+         <h3>Menu 3</h3>
+         <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+       </div>
+     </div>
     <div class=\"main-content\">
       ";
-        // line 31
+        // line 82
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 31, $this->source); })()), "session", array()), "flashBag", array()), "get", array(0 => "success"), "method"));
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 82, $this->source); })()), "session", array()), "flashBag", array()), "get", array(0 => "success"), "method"));
         foreach ($context['_seq'] as $context["_key"] => $context["msg"]) {
-            // line 32
+            // line 83
             echo "          <div class=\"alert alert-success\">
             ";
-            // line 33
+            // line 84
             echo twig_escape_filter($this->env, $context["msg"], "html", null, true);
             echo "
           </div>
@@ -102,7 +145,7 @@ class __TwigTemplate_a7c1a9f4ed43e1ccc63f6f4c1f917d1754903d637744f9de24dd72264df
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['msg'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 36
+        // line 87
         echo "    </body>
 
 </html>
@@ -133,7 +176,7 @@ class __TwigTemplate_a7c1a9f4ed43e1ccc63f6f4c1f917d1754903d637744f9de24dd72264df
 
     }
 
-    // line 6
+    // line 10
     public function block_stylesheets($context, array $blocks = array())
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -142,7 +185,7 @@ class __TwigTemplate_a7c1a9f4ed43e1ccc63f6f4c1f917d1754903d637744f9de24dd72264df
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        // line 7
+        // line 11
         echo "        <link rel=\"stylesheet\" href=\"/css/style.css\">
         ";
         
@@ -165,16 +208,20 @@ class __TwigTemplate_a7c1a9f4ed43e1ccc63f6f4c1f917d1754903d637744f9de24dd72264df
 
     public function getDebugInfo()
     {
-        return array (  146 => 7,  137 => 6,  119 => 5,  106 => 36,  97 => 33,  94 => 32,  90 => 31,  83 => 27,  79 => 25,  73 => 23,  70 => 22,  68 => 21,  64 => 19,  58 => 17,  52 => 15,  50 => 14,  43 => 9,  41 => 6,  37 => 5,  31 => 1,);
+        return array (  189 => 11,  180 => 10,  162 => 5,  149 => 87,  140 => 84,  137 => 83,  133 => 82,  113 => 65,  109 => 64,  64 => 22,  58 => 19,  53 => 17,  47 => 13,  45 => 10,  37 => 5,  31 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Twig_Source("<!DOCTYPE html>
+        return new Twig_Source("s<!DOCTYPE html>
 <html>
     <head>
         <meta charset=\"UTF-8\">
         <title>{% block title %}SSAMMETA{% endblock %}</title>
+
+        <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">
+        <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>
+        <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>
         {% block stylesheets %}
         <link rel=\"stylesheet\" href=\"/css/style.css\">
         {% endblock %}
@@ -182,23 +229,70 @@ class __TwigTemplate_a7c1a9f4ed43e1ccc63f6f4c1f917d1754903d637744f9de24dd72264df
     <body>
       <header class=\"header\">
       <div>
+        <span> Welcome! {{app.user.username}} </span>
         <span class=\"navi\">
-          {% if is_granted('ROLE_USER') %}
            <span><a href=\"{{ path('fos_user_security_logout') }}\">Logout</a></span>
-          {% else %}
-          <span><a href=\"{{ path('fos_user_security_login') }}\">Log in</a></span>
-          {% endif %}
-        </span>
-        <span class=\"navi\">
-          {% if is_granted('ROLE_USER') %}
-          {% else %}
-          <span><a href=\"{{ path('fos_user_registration_register') }}\">Join</a></span>
-          {% endif %}
         </span>
         </div>
         <img class=\"logo-icon\" src=\"{{asset('img/student.png')}}\">
      </header>
+     <h2> Math exam in SSAMMETTA </h2>
+     <ul class=\"nav nav-tabs\">
+       <li class=\"active\"><a data-toggle=\"tab\" href=\"#home\">Home</a></li>
+       <li><a data-toggle=\"tab\" href=\"#menu1\">Profile</a></li>
+       <li><a data-toggle=\"tab\" href=\"#menu2\">Menu 2</a></li>
+       <li><a data-toggle=\"tab\" href=\"#menu3\">Menu 3</a></li>
+     </ul>
 
+     <div class=\"tab-content\">
+       <div id=\"home\" class=\"tab-pane fade in active\">
+         <h3>HOME</h3>
+         <center><button type=\"button\" class=\"btn btn-primary\" data-toggle=\"tab\" href=\"#select\">Start exam</button></center>
+
+          <div class=\"col-sm-4\"></div>
+          <div class=\"col-sm-4\"><br>
+          <div id=\"select\" class=\"tab-pane fade\">
+              <select class=\"form-control\" id=\"\">
+                <option disable=\"disable\">select category</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+        </div>
+        </div>
+       <div class=\"col-sm-4\"></div>
+      </div>
+     <div id=\"menu1\" class=\"tab-pane fade\">
+         <h3>Showing Profile</h3>
+         <table
+         <class=\"table\">
+        <thead>
+        <tr>
+        <th>name</th>
+        <th>email</th>
+        <th>type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td><p>{{app.user.username}}</p></td>
+        <td><p>{{app.user.email}}</p></td>
+        <td><p>student</p></td>
+        <tr>
+        </tbody>
+        </table>
+
+       </div>
+       <div id=\"menu2\" class=\"tab-pane fade\">
+         <h3>Menu 2</h3>
+         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+       </div>
+       <div id=\"menu3\" class=\"tab-pane fade\">
+         <h3>Menu 3</h3>
+         <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+       </div>
+     </div>
     <div class=\"main-content\">
       {% for msg in app.session.flashBag.get('success')%}
           <div class=\"alert alert-success\">

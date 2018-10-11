@@ -1,8 +1,12 @@
-<!DOCTYPE html>
+s<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}SSAMMETA{% endblock %}</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         {% block stylesheets %}
         <link rel="stylesheet" href="/css/style.css">
         {% endblock %}
@@ -15,9 +19,66 @@
            <span><a href="{{ path('fos_user_security_logout') }}">Logout</a></span>
         </span>
         </div>
-        <img class="logo-icon" src="{{asset('img/teacher.png')}}">
+        <img class="logo-icon" src="{{asset('img/student.png')}}">
      </header>
+     <h2> Math exam in SSAMMETTA </h2>
+     <ul class="nav nav-tabs">
+       <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+       <li><a data-toggle="tab" href="#menu1">Profile</a></li>
+       <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+       <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
+     </ul>
 
+     <div class="tab-content">
+       <div id="home" class="tab-pane fade in active">
+         <h3>HOME</h3>
+         <center><button type="button" class="btn btn-primary" data-toggle="tab" href="#select">Start exam</button></center>
+
+          <div class="col-sm-4"></div>
+          <div class="col-sm-4"><br>
+          <div id="select" class="tab-pane fade">
+              <select class="form-control" id="">
+                <option disable="disable">select category</option>
+                {% foreach %}
+                <option value="<p>{{cat.catid}}"><p>{{cat.catname}}</p></option>
+                {% endfor %}
+              </select>
+
+
+        </div>
+        </div>
+       <div class="col-sm-4"></div>
+      </div>
+     <div id="menu1" class="tab-pane fade">
+         <h3>Showing Profile</h3>
+         <table
+         <class="table">
+        <thead>
+        <tr>
+        <th>name</th>
+        <th>email</th>
+        <th>type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td><p>{{app.user.username}}</p></td>
+        <td><p>{{app.user.email}}</p></td>
+        <td><p>student</p></td>
+        <tr>
+        </tbody>
+        </table>
+
+       </div>
+       <div id="menu2" class="tab-pane fade">
+         <h3>Menu 2</h3>
+         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+       </div>
+       <div id="menu3" class="tab-pane fade">
+         <h3>Menu 3</h3>
+         <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+       </div>
+     </div>
     <div class="main-content">
       {% for msg in app.session.flashBag.get('success')%}
           <div class="alert alert-success">
