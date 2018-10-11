@@ -54,31 +54,19 @@ class __TwigTemplate_a04a52c8e6c73ea189298f8b4ca59f6fe0168346fdcf3bf57980b67a8df
     ";
         }
         // line 13
-        echo "<div class=\"ty\">
-       <input type=\"radio\" id=\"jtype\" name=\"_jtype\" value=\"on\" />
-       <label for=\"_jytype\">";
-        // line 15
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("security.login.remember_me", array(), "FOSUserBundle"), "html", null, true);
-        echo "</label>
-       <input type=\"radio\" id=\"jtype\" name=\"_jtype\" value=\"on\" />
-       <label for=\"_jytype\">";
-        // line 17
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("security.login.remember_me", array(), "FOSUserBundle"), "html", null, true);
-        echo "</label>
-</div>
-<div class=\"name\">
+        echo "<div class=\"name\">
     <label for=\"username\">";
-        // line 20
+        // line 14
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("security.login.username", array(), "FOSUserBundle"), "html", null, true);
         echo "</label>
     <input type=\"text\" id=\"username\" name=\"_username\" value=\"";
-        // line 21
-        echo twig_escape_filter($this->env, (isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new Twig_Error_Runtime('Variable "last_username" does not exist.', 21, $this->source); })()), "html", null, true);
+        // line 15
+        echo twig_escape_filter($this->env, (isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new Twig_Error_Runtime('Variable "last_username" does not exist.', 15, $this->source); })()), "html", null, true);
         echo "\" required=\"required\" autocomplete=\"username\" />
 </div>
 <div class=\"pass\">
     <label for=\"password\">";
-        // line 24
+        // line 18
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("security.login.password", array(), "FOSUserBundle"), "html", null, true);
         echo "</label>
     <input type=\"password\" id=\"password\" name=\"_password\" required=\"required\" autocomplete=\"current-password\" />
@@ -86,11 +74,11 @@ class __TwigTemplate_a04a52c8e6c73ea189298f8b4ca59f6fe0168346fdcf3bf57980b67a8df
  <div class=\"re\">
     <input type=\"checkbox\" id=\"remember_me\" name=\"_remember_me\" value=\"on\" />
     <label for=\"remember_me\">";
-        // line 29
+        // line 23
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("security.login.remember_me", array(), "FOSUserBundle"), "html", null, true);
         echo "</label>
     <input type=\"submit\" id=\"_submit\" name=\"_submit\" value=\"";
-        // line 30
+        // line 24
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("security.login.submit", array(), "FOSUserBundle"), "html", null, true);
         echo "\" />
  </div>
@@ -116,7 +104,7 @@ class __TwigTemplate_a04a52c8e6c73ea189298f8b4ca59f6fe0168346fdcf3bf57980b67a8df
 
     public function getDebugInfo()
     {
-        return array (  94 => 30,  90 => 29,  82 => 24,  76 => 21,  72 => 20,  66 => 17,  61 => 15,  57 => 13,  51 => 11,  49 => 10,  45 => 9,  40 => 6,  34 => 4,  32 => 3,  29 => 2,);
+        return array (  82 => 24,  78 => 23,  70 => 18,  64 => 15,  60 => 14,  57 => 13,  51 => 11,  49 => 10,  45 => 9,  40 => 6,  34 => 4,  32 => 3,  29 => 2,);
     }
 
     public function getSourceContext()
@@ -133,12 +121,6 @@ class __TwigTemplate_a04a52c8e6c73ea189298f8b4ca59f6fe0168346fdcf3bf57980b67a8df
     {% if csrf_token %}
         <input type=\"hidden\" name=\"_csrf_token\" value=\"{{ csrf_token }}\" />
     {% endif %}
-<div class=\"ty\">
-       <input type=\"radio\" id=\"jtype\" name=\"_jtype\" value=\"on\" />
-       <label for=\"_jytype\">{{ 'security.login.remember_me'|trans }}</label>
-       <input type=\"radio\" id=\"jtype\" name=\"_jtype\" value=\"on\" />
-       <label for=\"_jytype\">{{ 'security.login.remember_me'|trans }}</label>
-</div>
 <div class=\"name\">
     <label for=\"username\">{{ 'security.login.username'|trans }}</label>
     <input type=\"text\" id=\"username\" name=\"_username\" value=\"{{ last_username }}\" required=\"required\" autocomplete=\"username\" />

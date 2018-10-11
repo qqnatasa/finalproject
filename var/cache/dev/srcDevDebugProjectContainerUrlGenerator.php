@@ -46,7 +46,9 @@ class srcDevDebugProjectContainerUrlGenerator extends Symfony\Component\Routing\
         '_profiler_router' => array(array('token'), array('_controller' => 'web_profiler.controller.router::panelAction'), array(), array(array('text', '/router'), array('variable', '/', '[^/]++', 'token'), array('text', '/_profiler')), array(), array()),
         '_profiler_exception' => array(array('token'), array('_controller' => 'web_profiler.controller.exception::showAction'), array(), array(array('text', '/exception'), array('variable', '/', '[^/]++', 'token'), array('text', '/_profiler')), array(), array()),
         '_profiler_exception_css' => array(array('token'), array('_controller' => 'web_profiler.controller.exception::cssAction'), array(), array(array('text', '/exception.css'), array('variable', '/', '[^/]++', 'token'), array('text', '/_profiler')), array(), array()),
-        'app_lucky_number' => array(array(), array('template' => 'home_page.html.twig', '_controller' => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\TemplateController::templateAction'), array(), array(array('text', '/')), array(), array()),
+        'user' => array(array(), array('template' => 'user.html.twig', '_controller' => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\TemplateController::templateAction'), array(), array(array('text', '/')), array(), array()),
+        'teacher' => array(array(), array('template' => 'teacher.html.twig', '_controller' => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\TemplateController::templateAction'), array(), array(array('text', '/teacher')), array(), array()),
+        'student' => array(array(), array('template' => 'student.html.twig', '_controller' => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\TemplateController::templateAction'), array(), array(array('text', '/student')), array(), array()),
     );
         }
     }

@@ -10,12 +10,6 @@
     {% if csrf_token %}
         <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
     {% endif %}
-<div class="ty">
-       <input type="radio" id="jtype" name="_jtype" value="on" />
-       <label for="_jytype">{{ 'security.login.remember_me'|trans }}</label>
-       <input type="radio" id="jtype" name="_jtype" value="on" />
-       <label for="_jytype">{{ 'security.login.remember_me'|trans }}</label>
-</div>
 <div class="name">
     <label for="username">{{ 'security.login.username'|trans }}</label>
     <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" autocomplete="username" />

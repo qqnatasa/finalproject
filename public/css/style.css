@@ -201,3 +201,72 @@ div.col-xs-12 span a {
     border-top-width: 16px;
     margin-left: 60px;
 }
+span.user img.icon {
+    margin-left: 200px;
+    height: 400px;
+    margin-top: 100px;
+}
+
+span.user span a {
+    margin-left: 100px;
+    font-size: 50px;
+    border-color: #94a6a6;
+    border-style: solid;
+    color: #376152;
+    background-color: #d1d1c5;
+    text-decoration: none;
+    border-top-width: 0;
+    border-bottom-width: 5px;
+    border-left-width: 0;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+header.header div span {
+    margin-left: 9px;
+}
+
+div.1 span a {
+    margin-left: 1000px;
+}
+
+header.word img {
+    width: 900px;
+    margin-left: 300px;
+    margin-top: 1px;
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+div.word img {
+    width: 1000px;
+    margin-left: 0;
+    border-style: double;
+    border-color: #376152;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 10px;
+    border-bottom-width: 00;
+    padding-left: 300px;
+    padding-right: 300px;
+    margin-top: 170px;
+}
+
+
+span.user a {
+    margin-left: 100px;
+    font-size: 50px;
+    border-color: #94a6a6;
+    border-style: solid;
+    color: #376152;
+    background-color: #d1d1c5;
+    text-decoration: none;
+    border-top-width: 0;
+    border-bottom-width: 5px;
+    border-left-width: 0;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
