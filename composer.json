@@ -11,10 +11,12 @@
         "symfony/console": "*",
         "symfony/flex": "^1.1",
         "symfony/framework-bundle": "*",
+        "symfony/maker-bundle": "^1.7",
         "symfony/orm-pack": "^1.0",
         "symfony/swiftmailer-bundle": "^3.2",
         "symfony/twig-bundle": "*",
-        "symfony/yaml": "*"
+        "symfony/yaml": "*",
+        "twig/extensions": "^1.5"
     },
     "require-dev": {
         "symfony/dotenv": "*",

@@ -22,6 +22,7 @@ class ComposerStaticInit4680c2e27fbb16f5044056e4e33e3834
         ),
         'T' => 
         array (
+            'Twig\\Extensions\\' => 16,
             'Twig\\' => 5,
         ),
         'S' => 
@@ -60,6 +61,7 @@ class ComposerStaticInit4680c2e27fbb16f5044056e4e33e3834
             'Symfony\\Bundle\\TwigBundle\\' => 26,
             'Symfony\\Bundle\\SwiftmailerBundle\\' => 33,
             'Symfony\\Bundle\\SecurityBundle\\' => 30,
+            'Symfony\\Bundle\\MakerBundle\\' => 27,
             'Symfony\\Bundle\\FrameworkBundle\\' => 31,
             'Symfony\\Bridge\\Twig\\' => 20,
             'Symfony\\Bridge\\Doctrine\\' => 24,
@@ -71,6 +73,7 @@ class ComposerStaticInit4680c2e27fbb16f5044056e4e33e3834
             'Psr\\Log\\' => 8,
             'Psr\\Container\\' => 14,
             'Psr\\Cache\\' => 10,
+            'PhpParser\\' => 10,
             'PackageVersions\\' => 16,
         ),
         'F' => 
@@ -110,6 +113,10 @@ class ComposerStaticInit4680c2e27fbb16f5044056e4e33e3834
         'Zend\\Code\\' => 
         array (
             0 => __DIR__ . '/..' . '/zendframework/zend-code/src',
+        ),
+        'Twig\\Extensions\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/twig/extensions/src',
         ),
         'Twig\\' => 
         array (
@@ -251,6 +258,10 @@ class ComposerStaticInit4680c2e27fbb16f5044056e4e33e3834
         array (
             0 => __DIR__ . '/..' . '/symfony/security-bundle',
         ),
+        'Symfony\\Bundle\\MakerBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/maker-bundle/src',
+        ),
         'Symfony\\Bundle\\FrameworkBundle\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/framework-bundle',
@@ -282,6 +293,10 @@ class ComposerStaticInit4680c2e27fbb16f5044056e4e33e3834
         'Psr\\Cache\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/cache/src',
+        ),
+        'PhpParser\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
         ),
         'PackageVersions\\' => 
         array (
@@ -355,6 +370,10 @@ class ComposerStaticInit4680c2e27fbb16f5044056e4e33e3834
     public static $prefixesPsr0 = array (
         'T' => 
         array (
+            'Twig_Extensions_' => 
+            array (
+                0 => __DIR__ . '/..' . '/twig/extensions/lib',
+            ),
             'Twig_' => 
             array (
                 0 => __DIR__ . '/..' . '/twig/twig/lib',

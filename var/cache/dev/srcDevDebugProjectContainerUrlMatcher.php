@@ -82,9 +82,11 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                     '/_profiler/phpinfo' => array(array('_route' => '_profiler_phpinfo', '_controller' => 'web_profiler.controller.profiler::phpinfoAction'), null, null, null),
                     '/_profiler/open' => array(array('_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'), null, null, null),
                     '/' => array(array('_route' => 'user', 'template' => 'user.html.twig', '_controller' => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\TemplateController::templateAction'), null, null, null),
+                    '/quiz' => array(array('_route' => 'quiz', '_controller' => 'App\\Controller\\Quizcontroller::quiz'), null, null, null),
                     '/teacher' => array(array('_route' => 'teacher', 'template' => 'teacher.html.twig', '_controller' => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\TemplateController::templateAction'), null, null, null),
-                    '/student' => array(array('_route' => 'student', 'template' => 'student.html.twig', '_controller' => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\TemplateController::templateAction'), null, null, null),
+                    '/answer' => array(array('_route' => 'answer', '_controller' => 'App\\Controller\\Answercontroller::answer'), null, null, null),
                     '/mail' => array(array('_route' => 'app_mail', '_controller' => 'App\\Controller\\mailcontroller::mail'), null, null, null),
+                    '/student' => array(array('_route' => 'student', '_controller' => 'App\\Controller\\Studentcontroller::student'), null, null, null),
                 );
 
                 if (!isset($routes[$pathinfo])) {

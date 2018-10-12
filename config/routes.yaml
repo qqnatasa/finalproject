@@ -7,18 +7,19 @@ user:
     defaults:
       template: 'user.html.twig'
 
+quiz:
+    path: /quiz
+    controller: App\Controller\Quizcontroller::quiz
+
 teacher:
     path: /teacher
     controller: Symfony\Bundle\FrameworkBundle\Controller\TemplateController::templateAction
     defaults:
       template: 'teacher.html.twig'
 
-student:
-    path: /student
-    controller: Symfony\Bundle\FrameworkBundle\Controller\TemplateController::templateAction
-    defaults:
-      template: 'student.html.twig'
-
 app_mail:
     path: /mail
     controller: App\Controller\mailcontroller::mail
+student:
+    path: /student
+    controller: App\Controller\Studentcontroller::student

@@ -28,7 +28,7 @@ class __TwigTemplate_a7c1a9f4ed43e1ccc63f6f4c1f917d1754903d637744f9de24dd72264df
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "student.html.twig"));
 
         // line 1
-        echo "s<!DOCTYPE html>
+        echo "<!DOCTYPE html>
 <html>
     <head>
         <meta charset=\"UTF-8\">
@@ -80,13 +80,30 @@ class __TwigTemplate_a7c1a9f4ed43e1ccc63f6f4c1f917d1754903d637744f9de24dd72264df
           <div class=\"col-sm-4\"></div>
           <div class=\"col-sm-4\"><br>
           <div id=\"select\" class=\"tab-pane fade\">
-              <select class=\"form-control\" id=\"\">
-                <option disable=\"disable\">select category</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-              </select>
+              <form method=\"post\" action=\"/quiz\">
+              <select class=\"form-control\" id=\"\" name=\"cat\">
+                <option >select category</option>
+";
+        // line 43
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["catalogs"]) || array_key_exists("catalogs", $context) ? $context["catalogs"] : (function () { throw new Twig_Error_Runtime('Variable "catalogs" does not exist.', 43, $this->source); })()));
+        foreach ($context['_seq'] as $context["_key"] => $context["catalog"]) {
+            // line 44
+            echo "                <option value=\"<p>";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["catalog"], "id", array()), "html", null, true);
+            echo "\"></p>";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["catalog"], "cat_name", array()), "html", null, true);
+            echo "</p></option>
+";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['catalog'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 46
+        echo "              </select><br>
+              <center><input type=\"submit\" value=\"submit\" class=\"btn btn-primary\"/></center>
+            </form>
+
         </div>
         </div>
        <div class=\"col-sm-4\"></div>
@@ -105,12 +122,12 @@ class __TwigTemplate_a7c1a9f4ed43e1ccc63f6f4c1f917d1754903d637744f9de24dd72264df
         <tbody>
         <tr>
         <td><p>";
-        // line 64
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 64, $this->source); })()), "user", array()), "username", array()), "html", null, true);
+        // line 67
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 67, $this->source); })()), "user", array()), "username", array()), "html", null, true);
         echo "</p></td>
         <td><p>";
-        // line 65
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 65, $this->source); })()), "user", array()), "email", array()), "html", null, true);
+        // line 68
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 68, $this->source); })()), "user", array()), "email", array()), "html", null, true);
         echo "</p></td>
         <td><p>student</p></td>
         <tr>
@@ -129,14 +146,14 @@ class __TwigTemplate_a7c1a9f4ed43e1ccc63f6f4c1f917d1754903d637744f9de24dd72264df
      </div>
     <div class=\"main-content\">
       ";
-        // line 82
+        // line 85
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 82, $this->source); })()), "session", array()), "flashBag", array()), "get", array(0 => "success"), "method"));
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 85, $this->source); })()), "session", array()), "flashBag", array()), "get", array(0 => "success"), "method"));
         foreach ($context['_seq'] as $context["_key"] => $context["msg"]) {
-            // line 83
+            // line 86
             echo "          <div class=\"alert alert-success\">
             ";
-            // line 84
+            // line 87
             echo twig_escape_filter($this->env, $context["msg"], "html", null, true);
             echo "
           </div>
@@ -145,7 +162,7 @@ class __TwigTemplate_a7c1a9f4ed43e1ccc63f6f4c1f917d1754903d637744f9de24dd72264df
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['msg'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 87
+        // line 90
         echo "    </body>
 
 </html>
@@ -208,12 +225,12 @@ class __TwigTemplate_a7c1a9f4ed43e1ccc63f6f4c1f917d1754903d637744f9de24dd72264df
 
     public function getDebugInfo()
     {
-        return array (  189 => 11,  180 => 10,  162 => 5,  149 => 87,  140 => 84,  137 => 83,  133 => 82,  113 => 65,  109 => 64,  64 => 22,  58 => 19,  53 => 17,  47 => 13,  45 => 10,  37 => 5,  31 => 1,);
+        return array (  206 => 11,  197 => 10,  179 => 5,  166 => 90,  157 => 87,  154 => 86,  150 => 85,  130 => 68,  126 => 67,  103 => 46,  92 => 44,  88 => 43,  64 => 22,  58 => 19,  53 => 17,  47 => 13,  45 => 10,  37 => 5,  31 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Twig_Source("s<!DOCTYPE html>
+        return new Twig_Source("<!DOCTYPE html>
 <html>
     <head>
         <meta charset=\"UTF-8\">
@@ -252,13 +269,16 @@ class __TwigTemplate_a7c1a9f4ed43e1ccc63f6f4c1f917d1754903d637744f9de24dd72264df
           <div class=\"col-sm-4\"></div>
           <div class=\"col-sm-4\"><br>
           <div id=\"select\" class=\"tab-pane fade\">
-              <select class=\"form-control\" id=\"\">
-                <option disable=\"disable\">select category</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-              </select>
+              <form method=\"post\" action=\"/quiz\">
+              <select class=\"form-control\" id=\"\" name=\"cat\">
+                <option >select category</option>
+{% for catalog in catalogs %}
+                <option value=\"<p>{{ catalog.id }}\"></p>{{ catalog.cat_name }}</p></option>
+{% endfor %}
+              </select><br>
+              <center><input type=\"submit\" value=\"submit\" class=\"btn btn-primary\"/></center>
+            </form>
+
         </div>
         </div>
        <div class=\"col-sm-4\"></div>

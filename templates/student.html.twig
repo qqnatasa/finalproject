@@ -1,4 +1,4 @@
-s<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -37,13 +37,15 @@ s<!DOCTYPE html>
           <div class="col-sm-4"></div>
           <div class="col-sm-4"><br>
           <div id="select" class="tab-pane fade">
-              <select class="form-control" id="">
-                <option disable="disable">select category</option>
-                {% foreach %}
-                <option value="<p>{{cat.catid}}"><p>{{cat.catname}}</p></option>
-                {% endfor %}
-              </select>
-
+              <form method="post" action="/quiz">
+              <select class="form-control" id="" name="cat">
+                <option >select category</option>
+{% for catalog in catalogs %}
+                <option value="<p>{{ catalog.id }}"></p>{{ catalog.cat_name }}</p></option>
+{% endfor %}
+              </select><br>
+              <center><input type="submit" value="submit" class="btn btn-primary"/></center>
+            </form>
 
         </div>
         </div>
