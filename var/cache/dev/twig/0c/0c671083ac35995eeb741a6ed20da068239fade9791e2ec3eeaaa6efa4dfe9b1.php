@@ -36,41 +36,96 @@ class __TwigTemplate_caca8c18e383b17815f99c7d7edb7151e08b8f23016a787fb7a7aa9e44c
         // line 5
         $this->displayBlock('title', $context, $blocks);
         echo "</title>
+
+        <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">
+        <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>
+        <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>
         ";
-        // line 6
+        // line 10
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 9
+        // line 13
         echo "    </head>
     <body>
       <header class=\"header\">
       <div>
         <span> Welcome! ";
-        // line 13
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 13, $this->source); })()), "user", array()), "username", array()), "html", null, true);
+        // line 17
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 17, $this->source); })()), "user", array()), "username", array()), "html", null, true);
         echo " </span>
         <span class=\"navi\">
            <span><a href=\"";
-        // line 15
+        // line 19
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("fos_user_security_logout");
         echo "\">Logout</a></span>
         </span>
         </div>
         <img class=\"logo-icon\" src=\"";
-        // line 18
+        // line 22
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/teacher.png"), "html", null, true);
         echo "\">
      </header>
+     <h2> Math exam in SSAMMETTA. Create math exam!</h2>
+     <ul class=\"nav nav-tabs\">
+       <li class=\"active\"><a data-toggle=\"tab\" href=\"#home\">Create</a></li>
+       <li><a data-toggle=\"tab\" href=\"#menu1\">Profile</a></li>
+       <li><a data-toggle=\"tab\" href=\"#menu2\">Result</a></li>
+       <li><a data-toggle=\"tab\" href=\"#menu3\">Send exam</a></li>
+     </ul>
 
+     <div class=\"tab-content\">
+       <div id=\"Exam\" class=\"tab-pane fade in active\">
+         <h3>Select a category. You can take tests at random!</h3>
+
+        </div>
+        </div>
+       <div class=\"col-sm-4\"></div>
+      </div>
+     <div id=\"menu1\" class=\"tab-pane fade\">
+         <h3>Showing Profile</h3>
+         <table>
+         <class=\"table\">
+        <thead>
+        <tr>
+        <th>name</th>
+        <th>email</th>
+        <th>type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td><p>";
+        // line 53
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 53, $this->source); })()), "user", array()), "username", array()), "html", null, true);
+        echo "</p></td>
+        <td><p>";
+        // line 54
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 54, $this->source); })()), "user", array()), "email", array()), "html", null, true);
+        echo "</p></td>
+        <td><p>teacher</p></td>
+        <tr>
+        </tbody>
+        </table>
+
+       </div>
+       <div id=\"menu2\" class=\"tab-pane fade\">
+         <h3>Result</h3>
+         <p>exam result</p>
+       </div>
+       <div id=\"menu3\" class=\"tab-pane fade\">
+         <h3>Locked exam</h3>
+         <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+       </div>
+     </div>
     <div class=\"main-content\">
       ";
-        // line 22
+        // line 71
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 22, $this->source); })()), "session", array()), "flashBag", array()), "get", array(0 => "success"), "method"));
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 71, $this->source); })()), "session", array()), "flashBag", array()), "get", array(0 => "success"), "method"));
         foreach ($context['_seq'] as $context["_key"] => $context["msg"]) {
-            // line 23
+            // line 72
             echo "          <div class=\"alert alert-success\">
             ";
-            // line 24
+            // line 73
             echo twig_escape_filter($this->env, $context["msg"], "html", null, true);
             echo "
           </div>
@@ -79,7 +134,7 @@ class __TwigTemplate_caca8c18e383b17815f99c7d7edb7151e08b8f23016a787fb7a7aa9e44c
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['msg'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 27
+        // line 76
         echo "    </body>
 
 </html>
@@ -110,7 +165,7 @@ class __TwigTemplate_caca8c18e383b17815f99c7d7edb7151e08b8f23016a787fb7a7aa9e44c
 
     }
 
-    // line 6
+    // line 10
     public function block_stylesheets($context, array $blocks = array())
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -119,7 +174,7 @@ class __TwigTemplate_caca8c18e383b17815f99c7d7edb7151e08b8f23016a787fb7a7aa9e44c
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        // line 7
+        // line 11
         echo "        <link rel=\"stylesheet\" href=\"/css/style.css\">
         ";
         
@@ -142,7 +197,7 @@ class __TwigTemplate_caca8c18e383b17815f99c7d7edb7151e08b8f23016a787fb7a7aa9e44c
 
     public function getDebugInfo()
     {
-        return array (  123 => 7,  114 => 6,  96 => 5,  83 => 27,  74 => 24,  71 => 23,  67 => 22,  60 => 18,  54 => 15,  49 => 13,  43 => 9,  41 => 6,  37 => 5,  31 => 1,);
+        return array (  178 => 11,  169 => 10,  151 => 5,  138 => 76,  129 => 73,  126 => 72,  122 => 71,  102 => 54,  98 => 53,  64 => 22,  58 => 19,  53 => 17,  47 => 13,  45 => 10,  37 => 5,  31 => 1,);
     }
 
     public function getSourceContext()
@@ -152,6 +207,10 @@ class __TwigTemplate_caca8c18e383b17815f99c7d7edb7151e08b8f23016a787fb7a7aa9e44c
     <head>
         <meta charset=\"UTF-8\">
         <title>{% block title %}SSAMMETA{% endblock %}</title>
+
+        <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">
+        <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>
+        <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>
         {% block stylesheets %}
         <link rel=\"stylesheet\" href=\"/css/style.css\">
         {% endblock %}
@@ -166,7 +225,52 @@ class __TwigTemplate_caca8c18e383b17815f99c7d7edb7151e08b8f23016a787fb7a7aa9e44c
         </div>
         <img class=\"logo-icon\" src=\"{{asset('img/teacher.png')}}\">
      </header>
+     <h2> Math exam in SSAMMETTA. Create math exam!</h2>
+     <ul class=\"nav nav-tabs\">
+       <li class=\"active\"><a data-toggle=\"tab\" href=\"#home\">Create</a></li>
+       <li><a data-toggle=\"tab\" href=\"#menu1\">Profile</a></li>
+       <li><a data-toggle=\"tab\" href=\"#menu2\">Result</a></li>
+       <li><a data-toggle=\"tab\" href=\"#menu3\">Send exam</a></li>
+     </ul>
 
+     <div class=\"tab-content\">
+       <div id=\"Exam\" class=\"tab-pane fade in active\">
+         <h3>Select a category. You can take tests at random!</h3>
+
+        </div>
+        </div>
+       <div class=\"col-sm-4\"></div>
+      </div>
+     <div id=\"menu1\" class=\"tab-pane fade\">
+         <h3>Showing Profile</h3>
+         <table>
+         <class=\"table\">
+        <thead>
+        <tr>
+        <th>name</th>
+        <th>email</th>
+        <th>type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td><p>{{app.user.username}}</p></td>
+        <td><p>{{app.user.email}}</p></td>
+        <td><p>teacher</p></td>
+        <tr>
+        </tbody>
+        </table>
+
+       </div>
+       <div id=\"menu2\" class=\"tab-pane fade\">
+         <h3>Result</h3>
+         <p>exam result</p>
+       </div>
+       <div id=\"menu3\" class=\"tab-pane fade\">
+         <h3>Locked exam</h3>
+         <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+       </div>
+     </div>
     <div class=\"main-content\">
       {% for msg in app.session.flashBag.get('success')%}
           <div class=\"alert alert-success\">

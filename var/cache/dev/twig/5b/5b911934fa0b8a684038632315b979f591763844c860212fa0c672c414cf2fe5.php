@@ -69,7 +69,7 @@ class __TwigTemplate_fa052abb1549df814a985cd72eed331c718c91373d4c538389044fe97f3
 <body>
 <div class=\"container\">
 <h2>SSAMMETTA exam in Arithmetic </h2>
-<form method=\"post\" action=\"/answer\">
+<form method=\"post\" action=\"answer\">
 ";
         // line 30
         $context["count"] = 0;
@@ -249,7 +249,7 @@ class __TwigTemplate_fa052abb1549df814a985cd72eed331c718c91373d4c538389044fe97f3
 <body>
 <div class=\"container\">
 <h2>SSAMMETTA exam in Arithmetic </h2>
-<form method=\"post\" action=\"/answer\">
+<form method=\"post\" action=\"answer\">
 {% set count = 0 %}
 {% for question in questions%}
 {% set count = count +1%}

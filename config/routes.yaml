@@ -6,10 +6,9 @@ user:
     controller: Symfony\Bundle\FrameworkBundle\Controller\TemplateController::templateAction
     defaults:
       template: 'user.html.twig'
-
 quiz:
     path: /quiz
-    controller: App\Controller\Quizcontroller::quiz
+    controller: App\Controller\quizcontroller::quiz
 
 teacher:
     path: /teacher

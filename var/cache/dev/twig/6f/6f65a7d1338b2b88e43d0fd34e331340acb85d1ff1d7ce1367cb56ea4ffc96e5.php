@@ -66,15 +66,15 @@ class __TwigTemplate_a7c1a9f4ed43e1ccc63f6f4c1f917d1754903d637744f9de24dd72264df
      </header>
      <h2> Math exam in SSAMMETTA </h2>
      <ul class=\"nav nav-tabs\">
-       <li class=\"active\"><a data-toggle=\"tab\" href=\"#home\">Home</a></li>
+       <li class=\"active\"><a data-toggle=\"tab\" href=\"#home\">Exam</a></li>
        <li><a data-toggle=\"tab\" href=\"#menu1\">Profile</a></li>
-       <li><a data-toggle=\"tab\" href=\"#menu2\">Menu 2</a></li>
-       <li><a data-toggle=\"tab\" href=\"#menu3\">Menu 3</a></li>
+       <li><a data-toggle=\"tab\" href=\"#menu2\">Result</a></li>
+       <li><a data-toggle=\"tab\" href=\"#menu3\">Locked exam</a></li>
      </ul>
 
      <div class=\"tab-content\">
-       <div id=\"home\" class=\"tab-pane fade in active\">
-         <h3>HOME</h3>
+       <div id=\"Exam\" class=\"tab-pane fade in active\">
+         <h3>Select a category. You can take tests at random!</h3>
          <center><button type=\"button\" class=\"btn btn-primary\" data-toggle=\"tab\" href=\"#select\">Start exam</button></center>
 
           <div class=\"col-sm-4\"></div>
@@ -82,14 +82,15 @@ class __TwigTemplate_a7c1a9f4ed43e1ccc63f6f4c1f917d1754903d637744f9de24dd72264df
           <div id=\"select\" class=\"tab-pane fade\">
               <form method=\"post\" action=\"/quiz\">
               <select class=\"form-control\" id=\"\" name=\"cat\">
-                <option >select category</option>
 ";
-        // line 43
+        // line 42
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["catalogs"]) || array_key_exists("catalogs", $context) ? $context["catalogs"] : (function () { throw new Twig_Error_Runtime('Variable "catalogs" does not exist.', 43, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["catalogs"]) || array_key_exists("catalogs", $context) ? $context["catalogs"] : (function () { throw new Twig_Error_Runtime('Variable "catalogs" does not exist.', 42, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["catalog"]) {
+            // line 43
+            echo "                <option >select category</option>
+                <option value=\"<p>";
             // line 44
-            echo "                <option value=\"<p>";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["catalog"], "id", array()), "html", null, true);
             echo "\"></p>";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["catalog"], "cat_name", array()), "html", null, true);
@@ -136,11 +137,11 @@ class __TwigTemplate_a7c1a9f4ed43e1ccc63f6f4c1f917d1754903d637744f9de24dd72264df
 
        </div>
        <div id=\"menu2\" class=\"tab-pane fade\">
-         <h3>Menu 2</h3>
-         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+         <h3>Result</h3>
+         <p>exam result</p>
        </div>
        <div id=\"menu3\" class=\"tab-pane fade\">
-         <h3>Menu 3</h3>
+         <h3>Locked exam</h3>
          <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
        </div>
      </div>
@@ -225,7 +226,7 @@ class __TwigTemplate_a7c1a9f4ed43e1ccc63f6f4c1f917d1754903d637744f9de24dd72264df
 
     public function getDebugInfo()
     {
-        return array (  206 => 11,  197 => 10,  179 => 5,  166 => 90,  157 => 87,  154 => 86,  150 => 85,  130 => 68,  126 => 67,  103 => 46,  92 => 44,  88 => 43,  64 => 22,  58 => 19,  53 => 17,  47 => 13,  45 => 10,  37 => 5,  31 => 1,);
+        return array (  207 => 11,  198 => 10,  180 => 5,  167 => 90,  158 => 87,  155 => 86,  151 => 85,  131 => 68,  127 => 67,  104 => 46,  94 => 44,  91 => 43,  87 => 42,  64 => 22,  58 => 19,  53 => 17,  47 => 13,  45 => 10,  37 => 5,  31 => 1,);
     }
 
     public function getSourceContext()
@@ -255,15 +256,15 @@ class __TwigTemplate_a7c1a9f4ed43e1ccc63f6f4c1f917d1754903d637744f9de24dd72264df
      </header>
      <h2> Math exam in SSAMMETTA </h2>
      <ul class=\"nav nav-tabs\">
-       <li class=\"active\"><a data-toggle=\"tab\" href=\"#home\">Home</a></li>
+       <li class=\"active\"><a data-toggle=\"tab\" href=\"#home\">Exam</a></li>
        <li><a data-toggle=\"tab\" href=\"#menu1\">Profile</a></li>
-       <li><a data-toggle=\"tab\" href=\"#menu2\">Menu 2</a></li>
-       <li><a data-toggle=\"tab\" href=\"#menu3\">Menu 3</a></li>
+       <li><a data-toggle=\"tab\" href=\"#menu2\">Result</a></li>
+       <li><a data-toggle=\"tab\" href=\"#menu3\">Locked exam</a></li>
      </ul>
 
      <div class=\"tab-content\">
-       <div id=\"home\" class=\"tab-pane fade in active\">
-         <h3>HOME</h3>
+       <div id=\"Exam\" class=\"tab-pane fade in active\">
+         <h3>Select a category. You can take tests at random!</h3>
          <center><button type=\"button\" class=\"btn btn-primary\" data-toggle=\"tab\" href=\"#select\">Start exam</button></center>
 
           <div class=\"col-sm-4\"></div>
@@ -271,8 +272,8 @@ class __TwigTemplate_a7c1a9f4ed43e1ccc63f6f4c1f917d1754903d637744f9de24dd72264df
           <div id=\"select\" class=\"tab-pane fade\">
               <form method=\"post\" action=\"/quiz\">
               <select class=\"form-control\" id=\"\" name=\"cat\">
-                <option >select category</option>
 {% for catalog in catalogs %}
+                <option >select category</option>
                 <option value=\"<p>{{ catalog.id }}\"></p>{{ catalog.cat_name }}</p></option>
 {% endfor %}
               </select><br>
@@ -305,11 +306,11 @@ class __TwigTemplate_a7c1a9f4ed43e1ccc63f6f4c1f917d1754903d637744f9de24dd72264df
 
        </div>
        <div id=\"menu2\" class=\"tab-pane fade\">
-         <h3>Menu 2</h3>
-         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+         <h3>Result</h3>
+         <p>exam result</p>
        </div>
        <div id=\"menu3\" class=\"tab-pane fade\">
-         <h3>Menu 3</h3>
+         <h3>Locked exam</h3>
          <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
        </div>
      </div>

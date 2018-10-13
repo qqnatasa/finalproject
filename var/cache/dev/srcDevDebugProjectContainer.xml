@@ -402,9 +402,6 @@
   </parameters>
   <services>
     <service id="service_container" class="Symfony\Component\DependencyInjection\ContainerInterface" public="true" synthetic="true"/>
-    <service id="App\Controller\AnswerController" class="App\Controller\AnswerController" public="true" autowire="true" autoconfigure="true">
-      <tag name="controller.service_arguments"/>
-    </service>
     <service id="App\Controller\QuizController" class="App\Controller\QuizController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
     </service>
@@ -4690,8 +4687,6 @@
       <tag name="maker.command"/>
       <argument>C:\Bitnami\wampstack-7.1.22-0\frameworks\project</argument>
     </service>
-    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\Controller.0.App\Controller\AnswerController" class="App\Controller\AnswerController" public="false" autowire="true" abstract="true"/>
-    <service id=".abstract.instanceof.App\Controller\AnswerController" class="App\Controller\AnswerController" public="false" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\Controller.0.App\Controller\QuizController" class="App\Controller\QuizController" public="false" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\QuizController" class="App\Controller\QuizController" public="false" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\Controller.0.App\Controller\StudentController" class="App\Controller\StudentController" public="false" autowire="true" abstract="true"/>
