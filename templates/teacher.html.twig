@@ -23,49 +23,92 @@
      </header>
      <h2> Math exam in SSAMMETTA. Create math exam!</h2>
      <ul class="nav nav-tabs">
-       <li class="active"><a data-toggle="tab" href="#home">Create</a></li>
+       <li class="active"><a data-toggle="tab" href="#Create">Create</a></li>
        <li><a data-toggle="tab" href="#menu1">Profile</a></li>
        <li><a data-toggle="tab" href="#menu2">Result</a></li>
        <li><a data-toggle="tab" href="#menu3">Send exam</a></li>
      </ul>
 
-     <div class="tab-content">
-       <div id="Exam" class="tab-pane fade in active">
-         <h3>Select a category. You can take tests at random!</h3>
 
-        </div>
-        </div>
+
+          <div class="tab-content">
+            <div id="Create" class="tab-pane fade in active">
+              <h3>Select a category. You can take tests at random!</h3>
+
+               <form method="post" action="/quizadd">
+
+                              <div class="form-group">
+                                <label for="text">Qustion</Q>:</label>
+                                <input type="text" class="form-control" name="qus" placeholder="Enter question">
+                              </div>
+                              <div class="form-group">
+                                <label for="text">option-1</Q>:</label>
+                                <input type="text" class="form-control"  name="op1" placeholder="Enter option-1">
+                              </div>
+                              <div class="form-group">
+                                <label for="text">option-2</Q>:</label>
+                                <input type="text" class="form-control" name="op2" placeholder="Enter option-1">
+                              </div>
+
+                              <div class="form-group">
+                                <label for="text">option-3</Q>:</label>
+                                <input type="text" class="form-control" name="op3"  placeholder="Enter option-1">
+                              </div>
+
+                              <div class="form-group">
+                                <label for="text">option-4</Q>:</label>
+                                <input type="text" class="form-control"  name="op4" placeholder="Enter option-1">
+                              </div>
+                              <div class="form-group">
+                                <label for="text">answer</Q>:</label>
+                                <input type="text" class="form-control"  name="ans" placeholder="answer">
+                              </div>
+
+                              <select class="form-group">
+                                <option value="">Choose Cateegory</option>
+                                <option value="">Vector</option>
+                                <option value="">Probability</option>
+                                <option value="">Differential</option>
+                                <option value="">Arithmetic</option>
+                              </select><br>
+
+
+                                <button type="submit" class="btn btn-default">Submit</button><br>
+                              </form>
+            <div class="col-sm-4"></div>
+           </div>
        <div class="col-sm-4"></div>
-      </div>
-     <div id="menu1" class="tab-pane fade">
-         <h3>Showing Profile</h3>
-         <table>
-         <class="table">
-        <thead>
-        <tr>
-        <th>name</th>
-        <th>email</th>
-        <th>type</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-        <td><p>{{app.user.username}}</p></td>
-        <td><p>{{app.user.email}}</p></td>
-        <td><p>teacher</p></td>
-        <tr>
-        </tbody>
-        </table>
 
-       </div>
-       <div id="menu2" class="tab-pane fade">
-         <h3>Result</h3>
-         <p>exam result</p>
-       </div>
-       <div id="menu3" class="tab-pane fade">
-         <h3>Locked exam</h3>
-         <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-       </div>
+       <div id="menu1" class="tab-pane fade">
+         <div class="container">
+           <h3>Showing Profile</h3>
+           <table class="table">
+          <thead>
+          <tr>
+          <th>name</th>
+          <th>email</th>
+          <th>type</th>
+          </tr>
+          </thead>
+          <tbody>
+          </tr>
+          <tr>
+          <td><p>{{app.user.username}}</p></td>
+          <td><p>{{app.user.email}}</p></td>
+          <td><p>teacher</p></td>
+        </tr>
+          </tbody>
+          </table>
+    </div>
+         </div>
+         <div id="menu2" class="tab-pane fade">
+           <h3>Result</h3>
+           <p>exam result</p>
+         </div>
+         <div id="menu3" class="tab-pane fade">
+           <h3>Locked exam</h3>
+           <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+         </div>
      </div>
     <div class="main-content">
       {% for msg in app.session.flashBag.get('success')%}

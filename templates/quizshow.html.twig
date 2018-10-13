@@ -25,10 +25,11 @@
      </header>
 <body>
 <div class="container">
-<h2>SSAMMETTA exam in Arithmetic </h2>
+<h2>SSAMMETTA exam in vector </h2>
 <form method="post" action="answer">
 {% set count = 0 %}
 {% for question in questions%}
+{% if question.cat_id ==1 %}
 {% set count = count +1%}
 <table class="table table-bordered">
 <thead>
@@ -59,8 +60,10 @@
 </tr>
 </tbody>
 </table>
+{% else %}
+{% endif %}
 {% endfor %}
-<center><input type="submit" value="submit exam" class="btn btn-success"/></center>
+<center><input type="submit" value="submit Exam" class="btn btn-success"/></center>
 </form>
 </div>
 <div class="col-sm-2">

@@ -24,5 +24,36 @@ class QuizController extends  Controller {
   public function quiz(){
     $questions= $this->getDoctrine()->getRepository
     (Question::class)->findall();
-      return $this->render('quizshow.html.twig',array('questions' =>$questions));}
+    return $this->render('quizshow.html.twig',array('questions' =>$questions));}
+
+
+public function quiz2(){
+  $questions= $this->getDoctrine()->getRepository
+  (Question::class)->findall();
+  return $this->render('quizshow2.html.twig',array('questions' =>$questions));}
+
+
+    public function quiz3(){
+      $questions= $this->getDoctrine()->getRepository
+      (Question::class)->findall();
+      return $this->render('quizshow3.html.twig',array('questions' =>$questions));}
+
+      public function quiz4(){
+        $questions= $this->getDoctrine()->getRepository
+        (Question::class)->findall();
+        return $this->render('quizshow4.html.twig',array('questions' =>$questions));}
+
+              public function quizadd(){
+            
+                $entityManager= $this->getDoctrine()->getManager();
+                $question = new Question();
+                $question ->setquestion();
+                $question ->setans1();
+                $question ->setans2();
+                $question ->setans3();
+                $question ->setans4();
+                $question ->setans4();
+                $question ->ans();
+                $question ->cat_id();
+                return $this->render('quizadd.html.twig',array('questions' =>$questions));}
 }

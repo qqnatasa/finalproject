@@ -82,10 +82,14 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                     '/_profiler/phpinfo' => array(array('_route' => '_profiler_phpinfo', '_controller' => 'web_profiler.controller.profiler::phpinfoAction'), null, null, null),
                     '/_profiler/open' => array(array('_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'), null, null, null),
                     '/' => array(array('_route' => 'user', 'template' => 'user.html.twig', '_controller' => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\TemplateController::templateAction'), null, null, null),
-                    '/quiz' => array(array('_route' => 'quiz', '_controller' => 'App\\Controller\\quizcontroller::quiz'), null, null, null),
                     '/teacher' => array(array('_route' => 'teacher', 'template' => 'teacher.html.twig', '_controller' => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\TemplateController::templateAction'), null, null, null),
                     '/mail' => array(array('_route' => 'app_mail', '_controller' => 'App\\Controller\\mailcontroller::mail'), null, null, null),
                     '/student' => array(array('_route' => 'student', '_controller' => 'App\\Controller\\Studentcontroller::student'), null, null, null),
+                    '/quizadd' => array(array('_route' => 'tadd', 'template' => 'quizadd.html.twig', '_controller' => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\TemplateController::templateAction'), null, null, null),
+                    '/quiz1' => array(array('_route' => 'quiz', '_controller' => 'App\\Controller\\QuizController::quiz'), null, null, null),
+                    '/quiz2' => array(array('_route' => 'quiz2', '_controller' => 'App\\Controller\\QuizController::quiz2'), null, null, null),
+                    '/quiz3' => array(array('_route' => 'quiz3', '_controller' => 'App\\Controller\\QuizController::quiz3'), null, null, null),
+                    '/quiz4' => array(array('_route' => 'quiz4', '_controller' => 'App\\Controller\\QuizController::quiz4'), null, null, null),
                 );
 
                 if (!isset($routes[$pathinfo])) {

@@ -6,9 +6,7 @@ user:
     controller: Symfony\Bundle\FrameworkBundle\Controller\TemplateController::templateAction
     defaults:
       template: 'user.html.twig'
-quiz:
-    path: /quiz
-    controller: App\Controller\quizcontroller::quiz
+
 
 teacher:
     path: /teacher
@@ -22,3 +20,26 @@ app_mail:
 student:
     path: /student
     controller: App\Controller\Studentcontroller::student
+quizadd:
+    path: /quizadd
+    controller: App\Controller\QuizController::quizadd
+    defaults:
+
+quiz:
+    path: /quiz1
+    controller: App\Controller\QuizController::quiz
+    defaults:
+
+quiz2:
+    path: /quiz2
+    controller: App\Controller\QuizController::quiz2
+    defaults:
+quiz3:
+    path: /quiz3
+    controller: App\Controller\QuizController::quiz3
+    defaults:
+
+quiz4:
+    path: /quiz4
+    controller: App\Controller\QuizController::quiz4
+    defaults:

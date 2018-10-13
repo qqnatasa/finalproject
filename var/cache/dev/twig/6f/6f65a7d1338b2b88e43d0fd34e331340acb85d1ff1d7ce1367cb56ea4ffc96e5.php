@@ -66,7 +66,7 @@ class __TwigTemplate_a7c1a9f4ed43e1ccc63f6f4c1f917d1754903d637744f9de24dd72264df
      </header>
      <h2> Math exam in SSAMMETTA </h2>
      <ul class=\"nav nav-tabs\">
-       <li class=\"active\"><a data-toggle=\"tab\" href=\"#home\">Exam</a></li>
+       <li class=\"active\"><a data-toggle=\"tab\" href=\"#Exam\">Exam</a></li>
        <li><a data-toggle=\"tab\" href=\"#menu1\">Profile</a></li>
        <li><a data-toggle=\"tab\" href=\"#menu2\">Result</a></li>
        <li><a data-toggle=\"tab\" href=\"#menu3\">Locked exam</a></li>
@@ -80,39 +80,23 @@ class __TwigTemplate_a7c1a9f4ed43e1ccc63f6f4c1f917d1754903d637744f9de24dd72264df
           <div class=\"col-sm-4\"></div>
           <div class=\"col-sm-4\"><br>
           <div id=\"select\" class=\"tab-pane fade\">
-              <form method=\"post\" action=\"/quiz\">
-              <select class=\"form-control\" id=\"\" name=\"cat\">
-";
-        // line 42
-        $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["catalogs"]) || array_key_exists("catalogs", $context) ? $context["catalogs"] : (function () { throw new Twig_Error_Runtime('Variable "catalogs" does not exist.', 42, $this->source); })()));
-        foreach ($context['_seq'] as $context["_key"] => $context["catalog"]) {
-            // line 43
-            echo "                <option >select category</option>
-                <option value=\"<p>";
-            // line 44
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["catalog"], "id", array()), "html", null, true);
-            echo "\"></p>";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["catalog"], "cat_name", array()), "html", null, true);
-            echo "</p></option>
-";
-        }
-        $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['catalog'], $context['_parent'], $context['loop']);
-        $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 46
-        echo "              </select><br>
-              <center><input type=\"submit\" value=\"submit\" class=\"btn btn-primary\"/></center>
-            </form>
+              <select class=\"form-control\" onchange=\"location = this.value;\">
+                <option >select category</option>
+                <option value=\"quiz1\">Vector</option>
+                <option value=\"quiz2\">Probability</option>
+                <option value=\"quiz3\">Differential</option>
+                <option value=\"quiz4\">Arithmetic</option>
+              </select><br>
+
 
         </div>
         </div>
        <div class=\"col-sm-4\"></div>
       </div>
      <div id=\"menu1\" class=\"tab-pane fade\">
+       <div class=\"container\">
          <h3>Showing Profile</h3>
-         <table
-         <class=\"table\">
+         <table class=\"table\">
         <thead>
         <tr>
         <th>name</th>
@@ -121,6 +105,7 @@ class __TwigTemplate_a7c1a9f4ed43e1ccc63f6f4c1f917d1754903d637744f9de24dd72264df
         </tr>
         </thead>
         <tbody>
+        </tr>
         <tr>
         <td><p>";
         // line 67
@@ -131,10 +116,10 @@ class __TwigTemplate_a7c1a9f4ed43e1ccc63f6f4c1f917d1754903d637744f9de24dd72264df
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 68, $this->source); })()), "user", array()), "email", array()), "html", null, true);
         echo "</p></td>
         <td><p>student</p></td>
-        <tr>
+      </tr>
         </tbody>
         </table>
-
+  </div>
        </div>
        <div id=\"menu2\" class=\"tab-pane fade\">
          <h3>Result</h3>
@@ -226,7 +211,7 @@ class __TwigTemplate_a7c1a9f4ed43e1ccc63f6f4c1f917d1754903d637744f9de24dd72264df
 
     public function getDebugInfo()
     {
-        return array (  207 => 11,  198 => 10,  180 => 5,  167 => 90,  158 => 87,  155 => 86,  151 => 85,  131 => 68,  127 => 67,  104 => 46,  94 => 44,  91 => 43,  87 => 42,  64 => 22,  58 => 19,  53 => 17,  47 => 13,  45 => 10,  37 => 5,  31 => 1,);
+        return array (  192 => 11,  183 => 10,  165 => 5,  152 => 90,  143 => 87,  140 => 86,  136 => 85,  116 => 68,  112 => 67,  64 => 22,  58 => 19,  53 => 17,  47 => 13,  45 => 10,  37 => 5,  31 => 1,);
     }
 
     public function getSourceContext()
@@ -256,7 +241,7 @@ class __TwigTemplate_a7c1a9f4ed43e1ccc63f6f4c1f917d1754903d637744f9de24dd72264df
      </header>
      <h2> Math exam in SSAMMETTA </h2>
      <ul class=\"nav nav-tabs\">
-       <li class=\"active\"><a data-toggle=\"tab\" href=\"#home\">Exam</a></li>
+       <li class=\"active\"><a data-toggle=\"tab\" href=\"#Exam\">Exam</a></li>
        <li><a data-toggle=\"tab\" href=\"#menu1\">Profile</a></li>
        <li><a data-toggle=\"tab\" href=\"#menu2\">Result</a></li>
        <li><a data-toggle=\"tab\" href=\"#menu3\">Locked exam</a></li>
@@ -270,24 +255,23 @@ class __TwigTemplate_a7c1a9f4ed43e1ccc63f6f4c1f917d1754903d637744f9de24dd72264df
           <div class=\"col-sm-4\"></div>
           <div class=\"col-sm-4\"><br>
           <div id=\"select\" class=\"tab-pane fade\">
-              <form method=\"post\" action=\"/quiz\">
-              <select class=\"form-control\" id=\"\" name=\"cat\">
-{% for catalog in catalogs %}
+              <select class=\"form-control\" onchange=\"location = this.value;\">
                 <option >select category</option>
-                <option value=\"<p>{{ catalog.id }}\"></p>{{ catalog.cat_name }}</p></option>
-{% endfor %}
+                <option value=\"quiz1\">Vector</option>
+                <option value=\"quiz2\">Probability</option>
+                <option value=\"quiz3\">Differential</option>
+                <option value=\"quiz4\">Arithmetic</option>
               </select><br>
-              <center><input type=\"submit\" value=\"submit\" class=\"btn btn-primary\"/></center>
-            </form>
+
 
         </div>
         </div>
        <div class=\"col-sm-4\"></div>
       </div>
      <div id=\"menu1\" class=\"tab-pane fade\">
+       <div class=\"container\">
          <h3>Showing Profile</h3>
-         <table
-         <class=\"table\">
+         <table class=\"table\">
         <thead>
         <tr>
         <th>name</th>
@@ -296,14 +280,15 @@ class __TwigTemplate_a7c1a9f4ed43e1ccc63f6f4c1f917d1754903d637744f9de24dd72264df
         </tr>
         </thead>
         <tbody>
+        </tr>
         <tr>
         <td><p>{{app.user.username}}</p></td>
         <td><p>{{app.user.email}}</p></td>
         <td><p>student</p></td>
-        <tr>
+      </tr>
         </tbody>
         </table>
-
+  </div>
        </div>
        <div id=\"menu2\" class=\"tab-pane fade\">
          <h3>Result</h3>

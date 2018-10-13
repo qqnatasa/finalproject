@@ -66,66 +66,109 @@ class __TwigTemplate_caca8c18e383b17815f99c7d7edb7151e08b8f23016a787fb7a7aa9e44c
      </header>
      <h2> Math exam in SSAMMETTA. Create math exam!</h2>
      <ul class=\"nav nav-tabs\">
-       <li class=\"active\"><a data-toggle=\"tab\" href=\"#home\">Create</a></li>
+       <li class=\"active\"><a data-toggle=\"tab\" href=\"#Create\">Create</a></li>
        <li><a data-toggle=\"tab\" href=\"#menu1\">Profile</a></li>
        <li><a data-toggle=\"tab\" href=\"#menu2\">Result</a></li>
        <li><a data-toggle=\"tab\" href=\"#menu3\">Send exam</a></li>
      </ul>
 
-     <div class=\"tab-content\">
-       <div id=\"Exam\" class=\"tab-pane fade in active\">
-         <h3>Select a category. You can take tests at random!</h3>
 
-        </div>
-        </div>
+
+          <div class=\"tab-content\">
+            <div id=\"Create\" class=\"tab-pane fade in active\">
+              <h3>Select a category. You can take tests at random!</h3>
+
+               <form method=\"post\" action=\"/quizadd\">
+
+                              <div class=\"form-group\">
+                                <label for=\"text\">Qustion</Q>:</label>
+                                <input type=\"text\" class=\"form-control\" name=\"qus\" placeholder=\"Enter question\">
+                              </div>
+                              <div class=\"form-group\">
+                                <label for=\"text\">option-1</Q>:</label>
+                                <input type=\"text\" class=\"form-control\"  name=\"op1\" placeholder=\"Enter option-1\">
+                              </div>
+                              <div class=\"form-group\">
+                                <label for=\"text\">option-2</Q>:</label>
+                                <input type=\"text\" class=\"form-control\" name=\"op2\" placeholder=\"Enter option-1\">
+                              </div>
+
+                              <div class=\"form-group\">
+                                <label for=\"text\">option-3</Q>:</label>
+                                <input type=\"text\" class=\"form-control\" name=\"op3\"  placeholder=\"Enter option-1\">
+                              </div>
+
+                              <div class=\"form-group\">
+                                <label for=\"text\">option-4</Q>:</label>
+                                <input type=\"text\" class=\"form-control\"  name=\"op4\" placeholder=\"Enter option-1\">
+                              </div>
+                              <div class=\"form-group\">
+                                <label for=\"text\">answer</Q>:</label>
+                                <input type=\"text\" class=\"form-control\"  name=\"ans\" placeholder=\"answer\">
+                              </div>
+
+                              <select class=\"form-group\">
+                                <option value=\"\">Choose Ctaegory</option>
+                                <option value=\"\">Vector</option>
+                                <option value=\"\">Probability</option>
+                                <option value=\"\">Differential</option>
+                                <option value=\"\">Arithmetic</option>
+                              </select><br>
+
+
+                                <button type=\"submit\" class=\"btn btn-default\">Submit</button><br>
+                              </form>
+            <div class=\"col-sm-4\"></div>
+           </div>
        <div class=\"col-sm-4\"></div>
-      </div>
-     <div id=\"menu1\" class=\"tab-pane fade\">
-         <h3>Showing Profile</h3>
-         <table>
-         <class=\"table\">
-        <thead>
-        <tr>
-        <th>name</th>
-        <th>email</th>
-        <th>type</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-        <td><p>";
-        // line 53
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 53, $this->source); })()), "user", array()), "username", array()), "html", null, true);
-        echo "</p></td>
-        <td><p>";
-        // line 54
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 54, $this->source); })()), "user", array()), "email", array()), "html", null, true);
-        echo "</p></td>
-        <td><p>teacher</p></td>
-        <tr>
-        </tbody>
-        </table>
 
-       </div>
-       <div id=\"menu2\" class=\"tab-pane fade\">
-         <h3>Result</h3>
-         <p>exam result</p>
-       </div>
-       <div id=\"menu3\" class=\"tab-pane fade\">
-         <h3>Locked exam</h3>
-         <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-       </div>
+       <div id=\"menu1\" class=\"tab-pane fade\">
+         <div class=\"container\">
+           <h3>Showing Profile</h3>
+           <table class=\"table\">
+          <thead>
+          <tr>
+          <th>name</th>
+          <th>email</th>
+          <th>type</th>
+          </tr>
+          </thead>
+          <tbody>
+          </tr>
+          <tr>
+          <td><p>";
+        // line 96
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 96, $this->source); })()), "user", array()), "username", array()), "html", null, true);
+        echo "</p></td>
+          <td><p>";
+        // line 97
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 97, $this->source); })()), "user", array()), "email", array()), "html", null, true);
+        echo "</p></td>
+          <td><p>teacher</p></td>
+        </tr>
+          </tbody>
+          </table>
+    </div>
+         </div>
+         <div id=\"menu2\" class=\"tab-pane fade\">
+           <h3>Result</h3>
+           <p>exam result</p>
+         </div>
+         <div id=\"menu3\" class=\"tab-pane fade\">
+           <h3>Locked exam</h3>
+           <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+         </div>
      </div>
     <div class=\"main-content\">
       ";
-        // line 71
+        // line 114
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 71, $this->source); })()), "session", array()), "flashBag", array()), "get", array(0 => "success"), "method"));
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 114, $this->source); })()), "session", array()), "flashBag", array()), "get", array(0 => "success"), "method"));
         foreach ($context['_seq'] as $context["_key"] => $context["msg"]) {
-            // line 72
+            // line 115
             echo "          <div class=\"alert alert-success\">
             ";
-            // line 73
+            // line 116
             echo twig_escape_filter($this->env, $context["msg"], "html", null, true);
             echo "
           </div>
@@ -134,7 +177,7 @@ class __TwigTemplate_caca8c18e383b17815f99c7d7edb7151e08b8f23016a787fb7a7aa9e44c
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['msg'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 76
+        // line 119
         echo "    </body>
 
 </html>
@@ -197,7 +240,7 @@ class __TwigTemplate_caca8c18e383b17815f99c7d7edb7151e08b8f23016a787fb7a7aa9e44c
 
     public function getDebugInfo()
     {
-        return array (  178 => 11,  169 => 10,  151 => 5,  138 => 76,  129 => 73,  126 => 72,  122 => 71,  102 => 54,  98 => 53,  64 => 22,  58 => 19,  53 => 17,  47 => 13,  45 => 10,  37 => 5,  31 => 1,);
+        return array (  221 => 11,  212 => 10,  194 => 5,  181 => 119,  172 => 116,  169 => 115,  165 => 114,  145 => 97,  141 => 96,  64 => 22,  58 => 19,  53 => 17,  47 => 13,  45 => 10,  37 => 5,  31 => 1,);
     }
 
     public function getSourceContext()
@@ -227,49 +270,92 @@ class __TwigTemplate_caca8c18e383b17815f99c7d7edb7151e08b8f23016a787fb7a7aa9e44c
      </header>
      <h2> Math exam in SSAMMETTA. Create math exam!</h2>
      <ul class=\"nav nav-tabs\">
-       <li class=\"active\"><a data-toggle=\"tab\" href=\"#home\">Create</a></li>
+       <li class=\"active\"><a data-toggle=\"tab\" href=\"#Create\">Create</a></li>
        <li><a data-toggle=\"tab\" href=\"#menu1\">Profile</a></li>
        <li><a data-toggle=\"tab\" href=\"#menu2\">Result</a></li>
        <li><a data-toggle=\"tab\" href=\"#menu3\">Send exam</a></li>
      </ul>
 
-     <div class=\"tab-content\">
-       <div id=\"Exam\" class=\"tab-pane fade in active\">
-         <h3>Select a category. You can take tests at random!</h3>
 
-        </div>
-        </div>
+
+          <div class=\"tab-content\">
+            <div id=\"Create\" class=\"tab-pane fade in active\">
+              <h3>Select a category. You can take tests at random!</h3>
+
+               <form method=\"post\" action=\"/quizadd\">
+
+                              <div class=\"form-group\">
+                                <label for=\"text\">Qustion</Q>:</label>
+                                <input type=\"text\" class=\"form-control\" name=\"qus\" placeholder=\"Enter question\">
+                              </div>
+                              <div class=\"form-group\">
+                                <label for=\"text\">option-1</Q>:</label>
+                                <input type=\"text\" class=\"form-control\"  name=\"op1\" placeholder=\"Enter option-1\">
+                              </div>
+                              <div class=\"form-group\">
+                                <label for=\"text\">option-2</Q>:</label>
+                                <input type=\"text\" class=\"form-control\" name=\"op2\" placeholder=\"Enter option-1\">
+                              </div>
+
+                              <div class=\"form-group\">
+                                <label for=\"text\">option-3</Q>:</label>
+                                <input type=\"text\" class=\"form-control\" name=\"op3\"  placeholder=\"Enter option-1\">
+                              </div>
+
+                              <div class=\"form-group\">
+                                <label for=\"text\">option-4</Q>:</label>
+                                <input type=\"text\" class=\"form-control\"  name=\"op4\" placeholder=\"Enter option-1\">
+                              </div>
+                              <div class=\"form-group\">
+                                <label for=\"text\">answer</Q>:</label>
+                                <input type=\"text\" class=\"form-control\"  name=\"ans\" placeholder=\"answer\">
+                              </div>
+
+                              <select class=\"form-group\">
+                                <option value=\"\">Choose Ctaegory</option>
+                                <option value=\"\">Vector</option>
+                                <option value=\"\">Probability</option>
+                                <option value=\"\">Differential</option>
+                                <option value=\"\">Arithmetic</option>
+                              </select><br>
+
+
+                                <button type=\"submit\" class=\"btn btn-default\">Submit</button><br>
+                              </form>
+            <div class=\"col-sm-4\"></div>
+           </div>
        <div class=\"col-sm-4\"></div>
-      </div>
-     <div id=\"menu1\" class=\"tab-pane fade\">
-         <h3>Showing Profile</h3>
-         <table>
-         <class=\"table\">
-        <thead>
-        <tr>
-        <th>name</th>
-        <th>email</th>
-        <th>type</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-        <td><p>{{app.user.username}}</p></td>
-        <td><p>{{app.user.email}}</p></td>
-        <td><p>teacher</p></td>
-        <tr>
-        </tbody>
-        </table>
 
-       </div>
-       <div id=\"menu2\" class=\"tab-pane fade\">
-         <h3>Result</h3>
-         <p>exam result</p>
-       </div>
-       <div id=\"menu3\" class=\"tab-pane fade\">
-         <h3>Locked exam</h3>
-         <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-       </div>
+       <div id=\"menu1\" class=\"tab-pane fade\">
+         <div class=\"container\">
+           <h3>Showing Profile</h3>
+           <table class=\"table\">
+          <thead>
+          <tr>
+          <th>name</th>
+          <th>email</th>
+          <th>type</th>
+          </tr>
+          </thead>
+          <tbody>
+          </tr>
+          <tr>
+          <td><p>{{app.user.username}}</p></td>
+          <td><p>{{app.user.email}}</p></td>
+          <td><p>teacher</p></td>
+        </tr>
+          </tbody>
+          </table>
+    </div>
+         </div>
+         <div id=\"menu2\" class=\"tab-pane fade\">
+           <h3>Result</h3>
+           <p>exam result</p>
+         </div>
+         <div id=\"menu3\" class=\"tab-pane fade\">
+           <h3>Locked exam</h3>
+           <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+         </div>
      </div>
     <div class=\"main-content\">
       {% for msg in app.session.flashBag.get('success')%}

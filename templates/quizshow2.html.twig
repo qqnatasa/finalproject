@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>{% block title %}SSAMMETA{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        {% block stylesheets %}
+        <link rel="stylesheet" href="/css/style.css">
+        {% endblock %}
+    </head>
+    <body>
+      <header class="header">
+      <div>
+        <span> Welcome! {{app.user.username}} </span>
+        <span class="navi">
+           <span><a href="{{ path('fos_user_security_logout') }}">Logout</a></span>
+        </span>
+        </div>
+        <img class="logo-icon" src="{{asset('img/student.png')}}">
+     </header>
+<body>
+<div class="container">
+<h2>SSAMMETTA exam in Probability </h2>
+<form method="post" action="answer">
+{% set count = 0 %}
+{% for question in questions%}
+{% if question.cat_id ==2 %}
+{% set count = count +1%}
+<table class="table table-bordered">
+<thead>
+<tr class="info">
+<th>&nbsp;{{ count }}&emsp;
+{{ question.question }}</th>
+</tr>
+</thead>
+<tbody>
+  {% if question.ans1 is defined %}
+<tr>
+<td>&nbsp;1&emsp;<input type="radio" value="0">&nbsp;  {{ question.ans1 }}</td>
+</tr>{% endif %}
+  {% if question.ans2 is defined %}
+<tr>
+<td>&nbsp;2&emsp;<input type="radio" value="1">&nbsp;  {{ question.ans2 }}</td>
+</tr>{% endif %}
+  {% if question.ans3 is defined %}
+<tr>
+<td>&nbsp;3&emsp;<input type="radio" value="2">&nbsp;  {{ question.ans3 }}</td>
+</tr>
+{% endif %}
+  {% if question.ans4 is defined %}
+<tr>
+<td>&nbsp;4&emsp;<input type="radio" value="3">&nbsp;  {{ question.ans4 }}</td>
+</tr>
+{% endif %}
+</tr>
+</tbody>
+</table>
+{% endif %}
+{% else %}
+{% endfor %}
+<center><input type="submit" value="submit Exam" class="btn btn-success"/></center>
+</form>
+</div>
+<div class="col-sm-2">
+</div>
+</body>
+</html>

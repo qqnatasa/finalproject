@@ -23,7 +23,7 @@
      </header>
      <h2> Math exam in SSAMMETTA </h2>
      <ul class="nav nav-tabs">
-       <li class="active"><a data-toggle="tab" href="#home">Exam</a></li>
+       <li class="active"><a data-toggle="tab" href="#Exam">Exam</a></li>
        <li><a data-toggle="tab" href="#menu1">Profile</a></li>
        <li><a data-toggle="tab" href="#menu2">Result</a></li>
        <li><a data-toggle="tab" href="#menu3">Locked exam</a></li>
@@ -37,24 +37,23 @@
           <div class="col-sm-4"></div>
           <div class="col-sm-4"><br>
           <div id="select" class="tab-pane fade">
-              <form method="post" action="/quiz">
-              <select class="form-control" id="" name="cat">
+              <select class="form-control" onchange="location = this.value;">
                 <option >select category</option>
-{% for catalog in catalogs %}
-                <option value="<p>{{ catalog.id }}"></p>{{ catalog.cat_name }}</p></option>
-{% endfor %}
+                <option value="quiz1">Vector</option>
+                <option value="quiz2">Probability</option>
+                <option value="quiz3">Differential</option>
+                <option value="quiz4">Arithmetic</option>
               </select><br>
-              <center><input type="submit" value="submit" class="btn btn-primary"/></center>
-            </form>
+
 
         </div>
         </div>
        <div class="col-sm-4"></div>
       </div>
      <div id="menu1" class="tab-pane fade">
+       <div class="container">
          <h3>Showing Profile</h3>
-         <table
-         <class="table">
+         <table class="table">
         <thead>
         <tr>
         <th>name</th>
@@ -63,14 +62,15 @@
         </tr>
         </thead>
         <tbody>
+        </tr>
         <tr>
         <td><p>{{app.user.username}}</p></td>
         <td><p>{{app.user.email}}</p></td>
         <td><p>student</p></td>
-        <tr>
+      </tr>
         </tbody>
         </table>
-
+  </div>
        </div>
        <div id="menu2" class="tab-pane fade">
          <h3>Result</h3>
