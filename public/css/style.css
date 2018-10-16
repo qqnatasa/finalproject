@@ -7,11 +7,35 @@ body {
 
 html {height:100%}
 
+div.form-group label {
+    margin-left: 600px;
+}
+
 
 img.logo-icon{
 height: 250px;
 margin-left: 40px;
 }
+
+input.form-control {
+    width: 600px;
+}
+
+textarea.form-control {
+    width: 600px;
+    height: 300px;
+    margin-left: 700px;
+}
+select.formgroup {
+    margin-left: 700px;
+}
+
+
+button.btn-default.btn {
+    margin-left: 650px;
+}
+
+
 span.navi span{
 color: #faf5fa;
 border-style: outset;
@@ -27,6 +51,8 @@ font-weight: bold;
 ul.nav div a {
     margin-left: 1200px;
 }
+
+
 
 span.nav div {
     margin-left: 1200px;
@@ -186,6 +212,9 @@ div.col-xs-12 p {
     padding-bottom: 30px;
 }
 
+
+
+
 div.col-xs-12 span a {
     font-style: italic;
     font-weight: bold;
@@ -205,6 +234,10 @@ span.user img.icon {
     height: 400px;
     margin-top: 100px;
 }
+input.form-control {
+    margin-left: 700px;
+}
+
 
 span.user span a {
     margin-left: 100px;

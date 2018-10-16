@@ -64,18 +64,19 @@ class __TwigTemplate_937b314764fb527b307c7fc348a46df7384451c16529daa93ba9ec70aa6
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/teacher.png"), "html", null, true);
         echo "\">
      </header>
-    <center> <h2> Success! </h2></center>
-      <span><a href=\"/teacher\">go to home</a></span>
+    <center> <h2> Success! </h2>
+    <span><a href=\"/teacher\">go to home</a></span></center>
+
     <div class=\"main-content\">
       ";
-        // line 27
+        // line 28
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 27, $this->source); })()), "session", array()), "flashBag", array()), "get", array(0 => "success"), "method"));
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 28, $this->source); })()), "session", array()), "flashBag", array()), "get", array(0 => "success"), "method"));
         foreach ($context['_seq'] as $context["_key"] => $context["msg"]) {
-            // line 28
+            // line 29
             echo "          <div class=\"alert alert-success\">
             ";
-            // line 29
+            // line 30
             echo twig_escape_filter($this->env, $context["msg"], "html", null, true);
             echo "
           </div>
@@ -84,7 +85,7 @@ class __TwigTemplate_937b314764fb527b307c7fc348a46df7384451c16529daa93ba9ec70aa6
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['msg'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 32
+        // line 33
         echo "    </body>
 
 </html>
@@ -147,7 +148,7 @@ class __TwigTemplate_937b314764fb527b307c7fc348a46df7384451c16529daa93ba9ec70aa6
 
     public function getDebugInfo()
     {
-        return array (  128 => 11,  119 => 10,  101 => 5,  88 => 32,  79 => 29,  76 => 28,  72 => 27,  64 => 22,  58 => 19,  53 => 17,  47 => 13,  45 => 10,  37 => 5,  31 => 1,);
+        return array (  129 => 11,  120 => 10,  102 => 5,  89 => 33,  80 => 30,  77 => 29,  73 => 28,  64 => 22,  58 => 19,  53 => 17,  47 => 13,  45 => 10,  37 => 5,  31 => 1,);
     }
 
     public function getSourceContext()
@@ -175,8 +176,9 @@ class __TwigTemplate_937b314764fb527b307c7fc348a46df7384451c16529daa93ba9ec70aa6
         </div>
         <img class=\"logo-icon\" src=\"{{asset('img/teacher.png')}}\">
      </header>
-    <center> <h2> Success! </h2></center>
-      <span><a href=\"/teacher\">go to home</a></span>
+    <center> <h2> Success! </h2>
+    <span><a href=\"/teacher\">go to home</a></span></center>
+
     <div class=\"main-content\">
       {% for msg in app.session.flashBag.get('success')%}
           <div class=\"alert alert-success\">

@@ -57,10 +57,11 @@ class __TwigTemplate_a7c1a9f4ed43e1ccc63f6f4c1f917d1754903d637744f9de24dd72264df
         // line 19
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("fos_user_security_logout");
         echo "\">Logout</a></span>
+            <span><a href=\"/mail\">mail</a></span>
         </span>
         </div>
         <img class=\"logo-icon\" src=\"";
-        // line 22
+        // line 23
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/student.png"), "html", null, true);
         echo "\">
      </header>
@@ -108,12 +109,12 @@ class __TwigTemplate_a7c1a9f4ed43e1ccc63f6f4c1f917d1754903d637744f9de24dd72264df
         </tr>
         <tr>
         <td><p>";
-        // line 67
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 67, $this->source); })()), "user", array()), "username", array()), "html", null, true);
+        // line 68
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 68, $this->source); })()), "user", array()), "username", array()), "html", null, true);
         echo "</p></td>
         <td><p>";
-        // line 68
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 68, $this->source); })()), "user", array()), "email", array()), "html", null, true);
+        // line 69
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 69, $this->source); })()), "user", array()), "email", array()), "html", null, true);
         echo "</p></td>
         <td><p>student</p></td>
       </tr>
@@ -127,19 +128,19 @@ class __TwigTemplate_a7c1a9f4ed43e1ccc63f6f4c1f917d1754903d637744f9de24dd72264df
        </div>
        <div id=\"menu3\" class=\"tab-pane fade\">
          <h3>Locked exam</h3>
-         <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+         <p>.</p>
        </div>
      </div>
     <div class=\"main-content\">
       ";
-        // line 85
+        // line 86
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 85, $this->source); })()), "session", array()), "flashBag", array()), "get", array(0 => "success"), "method"));
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 86, $this->source); })()), "session", array()), "flashBag", array()), "get", array(0 => "success"), "method"));
         foreach ($context['_seq'] as $context["_key"] => $context["msg"]) {
-            // line 86
+            // line 87
             echo "          <div class=\"alert alert-success\">
             ";
-            // line 87
+            // line 88
             echo twig_escape_filter($this->env, $context["msg"], "html", null, true);
             echo "
           </div>
@@ -148,7 +149,7 @@ class __TwigTemplate_a7c1a9f4ed43e1ccc63f6f4c1f917d1754903d637744f9de24dd72264df
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['msg'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 90
+        // line 91
         echo "    </body>
 
 </html>
@@ -211,7 +212,7 @@ class __TwigTemplate_a7c1a9f4ed43e1ccc63f6f4c1f917d1754903d637744f9de24dd72264df
 
     public function getDebugInfo()
     {
-        return array (  192 => 11,  183 => 10,  165 => 5,  152 => 90,  143 => 87,  140 => 86,  136 => 85,  116 => 68,  112 => 67,  64 => 22,  58 => 19,  53 => 17,  47 => 13,  45 => 10,  37 => 5,  31 => 1,);
+        return array (  193 => 11,  184 => 10,  166 => 5,  153 => 91,  144 => 88,  141 => 87,  137 => 86,  117 => 69,  113 => 68,  65 => 23,  58 => 19,  53 => 17,  47 => 13,  45 => 10,  37 => 5,  31 => 1,);
     }
 
     public function getSourceContext()
@@ -235,6 +236,7 @@ class __TwigTemplate_a7c1a9f4ed43e1ccc63f6f4c1f917d1754903d637744f9de24dd72264df
         <span> Welcome! {{app.user.username}} </span>
         <span class=\"navi\">
            <span><a href=\"{{ path('fos_user_security_logout') }}\">Logout</a></span>
+            <span><a href=\"/mail\">mail</a></span>
         </span>
         </div>
         <img class=\"logo-icon\" src=\"{{asset('img/student.png')}}\">
@@ -296,7 +298,7 @@ class __TwigTemplate_a7c1a9f4ed43e1ccc63f6f4c1f917d1754903d637744f9de24dd72264df
        </div>
        <div id=\"menu3\" class=\"tab-pane fade\">
          <h3>Locked exam</h3>
-         <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+         <p>.</p>
        </div>
      </div>
     <div class=\"main-content\">

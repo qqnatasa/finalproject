@@ -79,7 +79,7 @@ class __TwigTemplate_535fcf52bfd696da56be8d429618d363dcd01547aaf626a8d14f67ba353
         $context['_iterated'] = false;
         foreach ($context['_seq'] as $context["_key"] => $context["question"]) {
             // line 32
-            if ((twig_get_attribute($this->env, $this->source, $context["question"], "cat_id", array()) === 2)) {
+            if ((twig_get_attribute($this->env, $this->source, $context["question"], "cat_id", array()) == 2)) {
                 // line 33
                 $context["count"] = ((isset($context["count"]) || array_key_exists("count", $context) ? $context["count"] : (function () { throw new Twig_Error_Runtime('Variable "count" does not exist.', 33, $this->source); })()) + 1);
                 // line 34
@@ -259,7 +259,7 @@ class __TwigTemplate_535fcf52bfd696da56be8d429618d363dcd01547aaf626a8d14f67ba353
 <form method=\"post\" action=\"answer\">
 {% set count = 0 %}
 {% for question in questions%}
-{% if question.cat_id is same as(2) %}
+{% if question.cat_id ==2 %}
 {% set count = count +1%}
 <table class=\"table table-bordered\">
 <thead>

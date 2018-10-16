@@ -11,17 +11,12 @@ class __TwigTemplate_2a01dcc961dcc81f4af411e421d8ad3512c1590e2dac1eeabced67b3a2f
 
         $this->source = $this->getSourceContext();
 
-        // line 1
-        $this->parent = $this->loadTemplate("base.html.twig", "/mail.html.twig", 1);
+        $this->parent = false;
+
         $this->blocks = array(
-            'body' => array($this, 'block_body'),
+            'title' => array($this, 'block_title'),
             'stylesheets' => array($this, 'block_stylesheets'),
         );
-    }
-
-    protected function doGetParent(array $context)
-    {
-        return "base.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
@@ -32,33 +27,74 @@ class __TwigTemplate_2a01dcc961dcc81f4af411e421d8ad3512c1590e2dac1eeabced67b3a2f
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "/mail.html.twig"));
 
-        $this->parent->display($context, array_merge($this->blocks, $blocks));
-        
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
-
-        
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
-
-    }
-
-    // line 3
-    public function block_body($context, array $blocks = array())
-    {
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
-
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
-
-        // line 4
-        echo "<div class=\"container\">
- ";
-        // line 5
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["our_form"]) || array_key_exists("our_form", $context) ? $context["our_form"] : (function () { throw new Twig_Error_Runtime('Variable "our_form" does not exist.', 5, $this->source); })()), 'form');
+        // line 1
         echo "
-</div>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=\"UTF-8\">
+        <title>";
+        // line 7
+        $this->displayBlock('title', $context, $blocks);
+        echo "</title>
+
+        <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">
+        <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>
+        <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>
+        ";
+        // line 12
+        $this->displayBlock('stylesheets', $context, $blocks);
+        // line 15
+        echo "    </head>
+    <body>
+      <header class=\"header\">
+      <div>
+        <span> Welcome! ";
+        // line 19
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 19, $this->source); })()), "user", array()), "username", array()), "html", null, true);
+        echo " </span>
+        <span class=\"navi\">
+           <span><a href=\"";
+        // line 21
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("fos_user_security_logout");
+        echo "\">Logout</a></span>
+        </span>
+        </div>
+        <img class=\"logo-icon\" src=\"";
+        // line 24
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/ssammetta.png"), "html", null, true);
+        echo "\">
+     </header>
+        <div class=\"coo\">
+ ";
+        // line 27
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["our_form"]) || array_key_exists("our_form", $context) ? $context["our_form"] : (function () { throw new Twig_Error_Runtime('Variable "our_form" does not exist.', 27, $this->source); })()), 'form');
+        echo "
+   </div>
+ </body>
+
+</html>
 ";
         
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
+
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+    }
+
+    // line 7
+    public function block_title($context, array $blocks = array())
+    {
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+
+        echo "SSAMMETA";
+        
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
         
@@ -66,7 +102,7 @@ class __TwigTemplate_2a01dcc961dcc81f4af411e421d8ad3512c1590e2dac1eeabced67b3a2f
 
     }
 
-    // line 9
+    // line 12
     public function block_stylesheets($context, array $blocks = array())
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -75,11 +111,9 @@ class __TwigTemplate_2a01dcc961dcc81f4af411e421d8ad3512c1590e2dac1eeabced67b3a2f
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        // line 10
-        echo "<style>
-
-</style>
-";
+        // line 13
+        echo "        <link rel=\"stylesheet\" href=\"/css/style.css\">
+        ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -100,24 +134,42 @@ class __TwigTemplate_2a01dcc961dcc81f4af411e421d8ad3512c1590e2dac1eeabced67b3a2f
 
     public function getDebugInfo()
     {
-        return array (  79 => 10,  70 => 9,  57 => 5,  54 => 4,  45 => 3,  15 => 1,);
+        return array (  115 => 13,  106 => 12,  88 => 7,  72 => 27,  66 => 24,  60 => 21,  55 => 19,  49 => 15,  47 => 12,  39 => 7,  31 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Twig_Source("{% extends 'base.html.twig' %}
+        return new Twig_Source("
 
-{% block body %}
-<div class=\"container\">
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=\"UTF-8\">
+        <title>{% block title %}SSAMMETA{% endblock %}</title>
+
+        <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">
+        <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>
+        <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>
+        {% block stylesheets %}
+        <link rel=\"stylesheet\" href=\"/css/style.css\">
+        {% endblock %}
+    </head>
+    <body>
+      <header class=\"header\">
+      <div>
+        <span> Welcome! {{app.user.username}} </span>
+        <span class=\"navi\">
+           <span><a href=\"{{ path('fos_user_security_logout') }}\">Logout</a></span>
+        </span>
+        </div>
+        <img class=\"logo-icon\" src=\"{{asset('img/ssammetta.png')}}\">
+     </header>
+        <div class=\"coo\">
  {{ form(our_form)}}
-</div>
-{% endblock %}
+   </div>
+ </body>
 
-{% block stylesheets %}
-<style>
-
-</style>
-{% endblock %}
+</html>
 ", "/mail.html.twig", "C:\\Bitnami\\wampstack-7.1.22-0\\frameworks\\project\\templates\\mail.html.twig");
     }
 }

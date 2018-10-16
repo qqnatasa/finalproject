@@ -57,10 +57,11 @@ class __TwigTemplate_caca8c18e383b17815f99c7d7edb7151e08b8f23016a787fb7a7aa9e44c
         // line 19
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("fos_user_security_logout");
         echo "\">Logout</a></span>
+             <span><a href=\"/mail\">mail</a></span>
         </span>
         </div>
         <img class=\"logo-icon\" src=\"";
-        // line 22
+        // line 23
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/teacher.png"), "html", null, true);
         echo "\">
      </header>
@@ -107,8 +108,8 @@ class __TwigTemplate_caca8c18e383b17815f99c7d7edb7151e08b8f23016a787fb7a7aa9e44c
                                 <input type=\"text\" class=\"form-control\"  name=\"ans\" placeholder=\"answer\">
                               </div>
 
-                              <select class=\"form-group\">
-                                <option value=\"\">Choose Ctaegory</option>
+                              <select class=\"formgroup\">
+                                <option value=\"\">Choose Cateegory</option>
                                 <option value=\"\">Vector</option>
                                 <option value=\"\">Probability</option>
                                 <option value=\"\">Differential</option>
@@ -137,12 +138,12 @@ class __TwigTemplate_caca8c18e383b17815f99c7d7edb7151e08b8f23016a787fb7a7aa9e44c
           </tr>
           <tr>
           <td><p>";
-        // line 96
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 96, $this->source); })()), "user", array()), "username", array()), "html", null, true);
+        // line 97
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 97, $this->source); })()), "user", array()), "username", array()), "html", null, true);
         echo "</p></td>
           <td><p>";
-        // line 97
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 97, $this->source); })()), "user", array()), "email", array()), "html", null, true);
+        // line 98
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 98, $this->source); })()), "user", array()), "email", array()), "html", null, true);
         echo "</p></td>
           <td><p>teacher</p></td>
         </tr>
@@ -155,20 +156,20 @@ class __TwigTemplate_caca8c18e383b17815f99c7d7edb7151e08b8f23016a787fb7a7aa9e44c
            <p>exam result</p>
          </div>
          <div id=\"menu3\" class=\"tab-pane fade\">
-           <h3>Locked exam</h3>
-           <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+           <h3>send exam</h3>
+           <p>.</p>
          </div>
      </div>
     <div class=\"main-content\">
       ";
-        // line 114
+        // line 115
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 114, $this->source); })()), "session", array()), "flashBag", array()), "get", array(0 => "success"), "method"));
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 115, $this->source); })()), "session", array()), "flashBag", array()), "get", array(0 => "success"), "method"));
         foreach ($context['_seq'] as $context["_key"] => $context["msg"]) {
-            // line 115
+            // line 116
             echo "          <div class=\"alert alert-success\">
             ";
-            // line 116
+            // line 117
             echo twig_escape_filter($this->env, $context["msg"], "html", null, true);
             echo "
           </div>
@@ -177,7 +178,7 @@ class __TwigTemplate_caca8c18e383b17815f99c7d7edb7151e08b8f23016a787fb7a7aa9e44c
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['msg'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 119
+        // line 120
         echo "    </body>
 
 </html>
@@ -240,7 +241,7 @@ class __TwigTemplate_caca8c18e383b17815f99c7d7edb7151e08b8f23016a787fb7a7aa9e44c
 
     public function getDebugInfo()
     {
-        return array (  221 => 11,  212 => 10,  194 => 5,  181 => 119,  172 => 116,  169 => 115,  165 => 114,  145 => 97,  141 => 96,  64 => 22,  58 => 19,  53 => 17,  47 => 13,  45 => 10,  37 => 5,  31 => 1,);
+        return array (  222 => 11,  213 => 10,  195 => 5,  182 => 120,  173 => 117,  170 => 116,  166 => 115,  146 => 98,  142 => 97,  65 => 23,  58 => 19,  53 => 17,  47 => 13,  45 => 10,  37 => 5,  31 => 1,);
     }
 
     public function getSourceContext()
@@ -264,6 +265,7 @@ class __TwigTemplate_caca8c18e383b17815f99c7d7edb7151e08b8f23016a787fb7a7aa9e44c
         <span> Welcome! {{app.user.username}} </span>
         <span class=\"navi\">
            <span><a href=\"{{ path('fos_user_security_logout') }}\">Logout</a></span>
+             <span><a href=\"/mail\">mail</a></span>
         </span>
         </div>
         <img class=\"logo-icon\" src=\"{{asset('img/teacher.png')}}\">
@@ -311,8 +313,8 @@ class __TwigTemplate_caca8c18e383b17815f99c7d7edb7151e08b8f23016a787fb7a7aa9e44c
                                 <input type=\"text\" class=\"form-control\"  name=\"ans\" placeholder=\"answer\">
                               </div>
 
-                              <select class=\"form-group\">
-                                <option value=\"\">Choose Ctaegory</option>
+                              <select class=\"formgroup\">
+                                <option value=\"\">Choose Cateegory</option>
                                 <option value=\"\">Vector</option>
                                 <option value=\"\">Probability</option>
                                 <option value=\"\">Differential</option>
@@ -353,8 +355,8 @@ class __TwigTemplate_caca8c18e383b17815f99c7d7edb7151e08b8f23016a787fb7a7aa9e44c
            <p>exam result</p>
          </div>
          <div id=\"menu3\" class=\"tab-pane fade\">
-           <h3>Locked exam</h3>
-           <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+           <h3>send exam</h3>
+           <p>.</p>
          </div>
      </div>
     <div class=\"main-content\">

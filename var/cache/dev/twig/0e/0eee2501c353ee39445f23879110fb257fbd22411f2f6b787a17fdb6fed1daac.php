@@ -69,81 +69,82 @@ class __TwigTemplate_440c93c081adb2df0c5e7d509f62ee820d8e2f95fbe7a5e1894a1b77a4c
 <body>
 <div class=\"container\">
 <h2>SSAMMETTA exam in Arithmetic </h2>
-<form method=\"post\" action=\"answer\">
+<form method=\"post\" action=\"/answer\">
+
 ";
-        // line 30
-        $context["count"] = 0;
         // line 31
+        $context["count"] = 0;
+        // line 32
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["questions"]) || array_key_exists("questions", $context) ? $context["questions"] : (function () { throw new Twig_Error_Runtime('Variable "questions" does not exist.', 31, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["questions"]) || array_key_exists("questions", $context) ? $context["questions"] : (function () { throw new Twig_Error_Runtime('Variable "questions" does not exist.', 32, $this->source); })()));
         $context['_iterated'] = false;
         foreach ($context['_seq'] as $context["_key"] => $context["question"]) {
-            // line 32
+            // line 33
             if ((twig_get_attribute($this->env, $this->source, $context["question"], "cat_id", array()) == 4)) {
-                // line 33
-                $context["count"] = ((isset($context["count"]) || array_key_exists("count", $context) ? $context["count"] : (function () { throw new Twig_Error_Runtime('Variable "count" does not exist.', 33, $this->source); })()) + 1);
                 // line 34
+                $context["count"] = ((isset($context["count"]) || array_key_exists("count", $context) ? $context["count"] : (function () { throw new Twig_Error_Runtime('Variable "count" does not exist.', 34, $this->source); })()) + 1);
+                // line 35
                 echo "<table class=\"table table-bordered\">
 <thead>
 <tr class=\"info\">
 <th>&nbsp;";
-                // line 37
-                echo twig_escape_filter($this->env, (isset($context["count"]) || array_key_exists("count", $context) ? $context["count"] : (function () { throw new Twig_Error_Runtime('Variable "count" does not exist.', 37, $this->source); })()), "html", null, true);
+                // line 38
+                echo twig_escape_filter($this->env, (isset($context["count"]) || array_key_exists("count", $context) ? $context["count"] : (function () { throw new Twig_Error_Runtime('Variable "count" does not exist.', 38, $this->source); })()), "html", null, true);
                 echo "&emsp;
 ";
-                // line 38
+                // line 39
                 echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["question"], "question", array()), "html", null, true);
                 echo "</th>
 </tr>
 </thead>
 <tbody>
   ";
-                // line 42
+                // line 43
                 if (twig_get_attribute($this->env, $this->source, $context["question"], "ans1", array(), "any", true, true)) {
-                    // line 43
+                    // line 44
                     echo "<tr>
 <td>&nbsp;1&emsp;<input type=\"radio\" value=\"0\">&nbsp;  ";
-                    // line 44
+                    // line 45
                     echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["question"], "ans1", array()), "html", null, true);
                     echo "</td>
 </tr>";
                 }
-                // line 46
+                // line 47
                 echo "  ";
                 if (twig_get_attribute($this->env, $this->source, $context["question"], "ans2", array(), "any", true, true)) {
-                    // line 47
+                    // line 48
                     echo "<tr>
 <td>&nbsp;2&emsp;<input type=\"radio\" value=\"1\">&nbsp;  ";
-                    // line 48
+                    // line 49
                     echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["question"], "ans2", array()), "html", null, true);
                     echo "</td>
 </tr>";
                 }
-                // line 50
+                // line 51
                 echo "  ";
                 if (twig_get_attribute($this->env, $this->source, $context["question"], "ans3", array(), "any", true, true)) {
-                    // line 51
+                    // line 52
                     echo "<tr>
 <td>&nbsp;3&emsp;<input type=\"radio\" value=\"2\">&nbsp;  ";
-                    // line 52
+                    // line 53
                     echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["question"], "ans3", array()), "html", null, true);
                     echo "</td>
 </tr>
 ";
                 }
-                // line 55
+                // line 56
                 echo "  ";
                 if (twig_get_attribute($this->env, $this->source, $context["question"], "ans4", array(), "any", true, true)) {
-                    // line 56
+                    // line 57
                     echo "<tr>
 <td>&nbsp;4&emsp;<input type=\"radio\" value=\"3\">&nbsp;  ";
-                    // line 57
+                    // line 58
                     echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["question"], "ans4", array()), "html", null, true);
                     echo "</td>
 </tr>
 ";
                 }
-                // line 60
+                // line 61
                 echo "</tr>
 </tbody>
 </table>
@@ -156,7 +157,7 @@ class __TwigTemplate_440c93c081adb2df0c5e7d509f62ee820d8e2f95fbe7a5e1894a1b77a4c
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['question'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 66
+        // line 67
         echo "<center><input type=\"submit\" value=\"submit Exam\" class=\"btn btn-success\"/></center>
 </form>
 </div>
@@ -223,7 +224,7 @@ class __TwigTemplate_440c93c081adb2df0c5e7d509f62ee820d8e2f95fbe7a5e1894a1b77a4c
 
     public function getDebugInfo()
     {
-        return array (  204 => 13,  195 => 12,  177 => 4,  160 => 66,  147 => 60,  141 => 57,  138 => 56,  135 => 55,  129 => 52,  126 => 51,  123 => 50,  118 => 48,  115 => 47,  112 => 46,  107 => 44,  104 => 43,  102 => 42,  95 => 38,  91 => 37,  86 => 34,  84 => 33,  82 => 32,  77 => 31,  75 => 30,  66 => 24,  60 => 21,  55 => 19,  49 => 15,  47 => 12,  36 => 4,  31 => 1,);
+        return array (  205 => 13,  196 => 12,  178 => 4,  161 => 67,  148 => 61,  142 => 58,  139 => 57,  136 => 56,  130 => 53,  127 => 52,  124 => 51,  119 => 49,  116 => 48,  113 => 47,  108 => 45,  105 => 44,  103 => 43,  96 => 39,  92 => 38,  87 => 35,  85 => 34,  83 => 33,  78 => 32,  76 => 31,  66 => 24,  60 => 21,  55 => 19,  49 => 15,  47 => 12,  36 => 4,  31 => 1,);
     }
 
     public function getSourceContext()
@@ -256,7 +257,8 @@ class __TwigTemplate_440c93c081adb2df0c5e7d509f62ee820d8e2f95fbe7a5e1894a1b77a4c
 <body>
 <div class=\"container\">
 <h2>SSAMMETTA exam in Arithmetic </h2>
-<form method=\"post\" action=\"answer\">
+<form method=\"post\" action=\"/answer\">
+
 {% set count = 0 %}
 {% for question in questions%}
 {% if question.cat_id ==4 %}
